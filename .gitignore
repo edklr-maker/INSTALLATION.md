@@ -1,0 +1,15 @@
+# Recréé par installer.bat
+.venv/
+__pycache__/
+
+# Vidéos et fichiers de travail : trop lourds et personnels
+rushs/
+montages/
+travail/
+*.mp4
+*.mov
+*.mkv
+*.m4v
+*.avi
+*.webm
+*.srt

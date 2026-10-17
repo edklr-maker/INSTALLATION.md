@@ -1,0 +1,9 @@
+{
+  "langue": "fr",
+  "modele_whisper": "small",
+  "pause_coupure_s": 0.6,
+  "marge_s": 0.25,
+  "fondu_audio_s": 0.02,
+  "qualite_crf": 18,
+  "preset": "medium"
+}
