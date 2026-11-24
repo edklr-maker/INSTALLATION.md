@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="420mm" height="297mm"><style>
+:root{--paper:#ffffff;--sheet:#ffffff;--ink:#1b2833;--line:#34506a;--muted:#5b6c79;--fill:#c3d2dc;--soft:#e4ecf1;--soft2:#d3e0e9;
+--cote:#b0392b;--hyp:#8c6a12;--water:#9cc3dc;--rule:#cdd8df;
+--f-disp:"Barlow Condensed","Bahnschrift SemiCondensed","Bahnschrift","Arial Narrow",sans-serif;
+--f-body:"Source Serif 4",Georgia,serif;--f-mono:"IBM Plex Mono",Consolas,ui-monospace,monospace}
+.dr *{vector-effect:non-scaling-stroke}
+.wall{fill:var(--fill);stroke:var(--line);stroke-width:1.4}
+.wallh{fill:none;stroke:var(--hyp);stroke-width:1.2;stroke-dasharray:6 4}
+.soft{fill:var(--soft);stroke:var(--line);stroke-width:.8}
+.soft2{fill:var(--soft2);stroke:var(--line);stroke-width:.8}
+.bg{fill:var(--sheet);stroke:var(--line);stroke-width:1}
+.ln{fill:none;stroke:var(--line);stroke-width:1.4}
+.thin{fill:none;stroke:var(--line);stroke-width:.8}
+.dash{fill:none;stroke:var(--line);stroke-width:1;stroke-dasharray:7 5}
+.hyp{fill:none;stroke:var(--hyp);stroke-width:1.4;stroke-dasharray:6 4}
+.bar{fill:var(--cote);stroke:none;opacity:.55}
+.water{fill:var(--water);stroke:var(--line);stroke-width:1}
+.dim{stroke:var(--cote);stroke-width:1;fill:none}
+.ext{stroke:var(--cote);stroke-width:.6;fill:none;opacity:.7}
+.tx{fill:var(--ink);font-family:var(--f-mono)}
+.lbl{fill:var(--ink);font-family:var(--f-disp);font-weight:600;letter-spacing:.02em}
+.mut{fill:var(--muted);font-family:var(--f-mono)}
+.tc{fill:var(--cote);font-family:var(--f-mono);font-weight:500}
+.th{fill:var(--hyp);font-family:var(--f-mono)}
+.solid{fill:var(--line);stroke:none}
+.frame{fill:none;stroke:var(--ink);stroke-width:2.2}
+.frame2{fill:none;stroke:var(--ink);stroke-width:.8}
+.cell{fill:none;stroke:var(--ink);stroke-width:.8}
+.k-num{font-family:var(--f-mono);font-size:15px;fill:var(--cote);letter-spacing:2px}
+.k-title{font-family:var(--f-disp);font-weight:600;font-size:46px;fill:var(--ink)}
+.k-ref{font-family:var(--f-mono);font-size:15px;fill:var(--muted)}
+.k-lab{font-family:var(--f-mono);font-size:12px;fill:var(--muted);letter-spacing:1.5px}
+.k-txt{font-family:var(--f-mono);font-size:15px;fill:var(--ink)}
+.k-small{font-family:var(--f-mono);font-size:13px;fill:var(--ink)}
+.sb-a{fill:var(--ink)} .sb-b{fill:#fff;stroke:var(--ink);stroke-width:1}
+</style><rect x="0" y="0" width="1600" height="1131" fill="#ffffff"/><rect x="20" y="20" width="1560" height="1091" class="frame"/><svg viewBox="-5 -7.5 98 15" role="img" aria-label="Le fleuve sorti du temple" x="50" y="45" width="1500" height="830" preserveAspectRatio="xMidYMid meet" class="dr"><polygon points="0,0 88,0 88,5.6 80,5 60,2 40,1 20,0.3 0,0.1" class="water"/><polyline points="0,0.1 20,0.3 40,1 60,2 80,5 88,5.6" class="ln"/><line x1="20" y1="0.3" x2="20" y2="-1.9000000000000001" class="ln"/><circle cx="20" cy="-2.4000000000000004" r="0.45" class="ln"/><line x1="19.2" y1="-1.3" x2="20.8" y2="-1.3" class="thin"/><line x1="40" y1="1" x2="40" y2="-1.2000000000000002" class="ln"/><circle cx="40" cy="-1.7000000000000002" r="0.45" class="ln"/><line x1="39.2" y1="-0.6000000000000001" x2="40.8" y2="-0.6000000000000001" class="thin"/><line x1="60" y1="2" x2="60" y2="-0.20000000000000018" class="ln"/><circle cx="60" cy="-0.7000000000000002" r="0.45" class="ln"/><line x1="59.2" y1="0.3999999999999999" x2="60.8" y2="0.3999999999999999" class="thin"/><line x1="78" y1="-0.2" x2="81" y2="-0.2" class="ln"/><circle cx="77.4" cy="-0.3" r="0.45" class="ln"/><line x1="20" y1="-3.5" x2="20" y2="6" class="dash"/><text x="20" y="-4.5" class="tx" font-size="0.8400000000000001" text-anchor="middle" dominant-baseline="middle">1000 c. · chevilles</text><line x1="40" y1="-3.5" x2="40" y2="6" class="dash"/><text x="40" y="-4.5" class="tx" font-size="0.8400000000000001" text-anchor="middle" dominant-baseline="middle">2000 · genoux</text><line x1="60" y1="-3.5" x2="60" y2="6" class="dash"/><text x="60" y="-4.5" class="tx" font-size="0.8400000000000001" text-anchor="middle" dominant-baseline="middle">3000 · reins</text><line x1="80" y1="-3.5" x2="80" y2="6" class="dash"/><text x="80" y="-4.5" class="tx" font-size="0.8400000000000001" text-anchor="middle" dominant-baseline="middle">4000 · à la nage</text><text x="0" y="-6.3" class="mut" font-size="0.735" text-anchor="start" dominant-baseline="middle">seuil, côté sud de l'autel</text><text x="88" y="-6.3" class="mut" font-size="0.735" text-anchor="end" dominant-baseline="middle">→ Araba, mer Morte</text><text x="44" y="6.8" class="th" font-size="0.735" text-anchor="middle" dominant-baseline="middle">profil en long · profondeurs exagérées</text></svg><line x1="20" y1="900" x2="1580" y2="900" class="frame"/><line x1="800" y1="900" x2="800" y2="1111" class="cell"/><line x1="1190" y1="900" x2="1190" y2="1111" class="cell"/><text x="44" y="934" class="k-num">PLANCHE 13 · TEMPLE D'ÉZÉCHIEL</text><text x="44" y="992" class="k-title">Le fleuve sorti du temple</text><text x="44" y="1030" class="k-ref">Ézéchiel 47:1-12</text><text x="44" y="1075" class="k-lab">CROQUIS POUR MODÉLISATION BLENDER · v1 · 24/11/2026</text><text x="822" y="930" class="k-lab">ÉCHELLE</text><rect x="822" y="970" width="30.612244897959187" height="10" class="sb-a"/><rect x="852.6122448979592" y="970" width="30.612244897959187" height="10" class="sb-b"/><rect x="883.2244897959183" y="970" width="30.612244897959187" height="10" class="sb-a"/><rect x="913.8367346938776" y="970" width="30.612244897959187" height="10" class="sb-b"/><rect x="944.4489795918367" y="970" width="30.612244897959187" height="10" class="sb-a"/><rect x="822" y="970" width="153.06122448979593" height="10" fill="none" stroke="#1b2833" stroke-width="1"/><text x="822" y="962" class="k-small">0</text><text x="975.0612244897959" y="962" class="k-small" text-anchor="end">500 coudées</text><text x="822" y="1002" class="k-small">500 coudées ≈ 262,5 m</text><text x="822" y="1024" class="k-small">imprimé en A3 : ≈ 1:6 500</text><text x="822" y="1046" class="k-small" fill="#8c6a12">échelle horizontale ; profondeurs exagérées</text><text x="822" y="1066" class="k-small">1 coudée longue = 52,5 cm</text><text x="822" y="1086" class="k-small">1 roseau = 6 coudées = 3,15 m</text><text x="1212" y="930" class="k-lab">LÉGENDE</text><rect x="1212" y="952" width="36" height="16" class="wall"/><text x="1260" y="965" class="k-small">maçonnerie cotée par le texte</text><rect x="1212" y="982" width="36" height="16" class="wallh"/><text x="1260" y="995" class="k-small">hypothèse ou déduction</text><rect x="1212" y="1012" width="36" height="16" class="soft"/><text x="1260" y="1025" class="k-small">sol, cour, terrain</text><line x1="1212" y1="1050" x2="1248" y2="1050" class="dim" stroke-width="2"/><text x="1260" y="1055" class="k-small">cote en coudées longues</text><text x="1212" y="1085" class="k-small" fill="#5b6c79">Plans : nord en haut, est à droite (sauf mention)</text></svg>

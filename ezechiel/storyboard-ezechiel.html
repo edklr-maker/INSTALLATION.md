@@ -1,0 +1,497 @@
+<title>Temple d'Ézéchiel — storyboard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Mise en page : planches de calque numérotées, une par fiche, croquis en tête, cotes et hypothèses en dessous */
+:root{
+  --paper:#e9eef1; --sheet:#f7f9fa; --ink:#1b2833; --line:#34506a; --muted:#5b6c79;
+  --fill:#c3d2dc; --soft:#dfe8ee; --soft2:#cfdde7; --cote:#b0392b; --hyp:#8c6a12; --water:#9cc3dc;
+  --rule:#cdd8df;
+  --f-disp:"Barlow Condensed","Arial Narrow",sans-serif;
+  --f-body:"Source Serif 4",Georgia,serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0e161d; --sheet:#141f28; --ink:#e2eaef; --line:#9db6c8; --muted:#8a9eac;
+  --fill:#2c4253; --soft:#1a2833; --soft2:#22333f; --cote:#ff7f6b; --hyp:#e2b84e; --water:#2b5873;
+  --rule:#253541; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0e161d; --sheet:#141f28; --ink:#e2eaef; --line:#9db6c8; --muted:#8a9eac;
+  --fill:#2c4253; --soft:#1a2833; --soft2:#22333f; --cote:#ff7f6b; --hyp:#e2b84e; --water:#2b5873;
+  --rule:#253541; color-scheme:dark}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
+.wrap{max-width:1180px;margin:0 auto;padding-block:40px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-disp);font-weight:600;letter-spacing:.01em;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cote)}
+.lead{max-width:68ch;color:var(--muted);margin:14px 0 0}
+header{display:grid;gap:10px;margin-bottom:34px}
+.decide{background:var(--sheet);border:1px solid var(--rule);padding:22px 24px;margin-bottom:40px}
+.decide h2{font-size:1.6rem;margin-bottom:6px}
+.decide ol{margin:10px 0 0;padding-left:1.3em;display:grid;gap:8px;max-width:95ch}
+.decide b{font-family:var(--f-disp);font-weight:600;font-size:1.08rem;letter-spacing:.02em}
+.legend{display:flex;flex-wrap:wrap;gap:18px;margin-top:16px;font-family:var(--f-mono);font-size:.78rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:22px;height:10px;display:inline-block;border:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,540px),1fr));gap:26px}
+.pl{background:var(--sheet);border:1px solid var(--rule);display:flex;flex-direction:column;min-width:0}
+.pl-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:14px 18px 10px;border-bottom:1px solid var(--rule)}
+.pl-head h3{font-size:1.45rem;line-height:1.1}
+.num{font-family:var(--f-mono);font-size:.75rem;color:var(--cote);letter-spacing:.1em;white-space:nowrap}
+.refs{font-family:var(--f-mono);font-size:.74rem;color:var(--muted);padding:6px 18px 0}
+.fig{padding:10px 12px 4px;overflow-x:auto}
+.fig svg{width:100%;height:auto;display:block;min-width:300px}
+.body{padding:6px 18px 18px;display:grid;gap:12px;font-size:.93rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:620px){.cols{grid-template-columns:1fr}}
+.cols>div{min-width:0}
+.body h4{font-family:var(--f-mono);font-weight:500;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+.body ul{margin:0;padding-left:1.05em;display:grid;gap:3px}
+.body .q li::marker{content:"? ";color:var(--hyp);font-family:var(--f-mono)}
+.blend{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);border-top:1px dashed var(--rule);padding-top:8px}
+.blend b{color:var(--ink);font-weight:500}
+code,.m{font-family:var(--f-mono);font-size:.86em;font-variant-numeric:tabular-nums}
+.next{margin-top:44px;background:var(--sheet);border:1px solid var(--rule);padding:22px 24px}
+.next h2{font-size:1.5rem;margin-bottom:6px}
+.next ul{margin:8px 0 0;padding-left:1.2em;display:grid;gap:6px;max-width:95ch}
+.src{margin-top:26px;font-size:.82rem;color:var(--muted)}
+.src a{color:var(--line)}
+/* SVG */
+.fig svg *{vector-effect:non-scaling-stroke}
+.wall{fill:var(--fill);stroke:var(--line);stroke-width:1.1}
+.wallh{fill:none;stroke:var(--hyp);stroke-width:1;stroke-dasharray:4 3}
+.soft{fill:var(--soft);stroke:var(--line);stroke-width:.6}
+.soft2{fill:var(--soft2);stroke:var(--line);stroke-width:.6}
+.bg{fill:var(--sheet);stroke:var(--line);stroke-width:.8}
+.ln{fill:none;stroke:var(--line);stroke-width:1.1}
+.thin{fill:none;stroke:var(--line);stroke-width:.6}
+.dash{fill:none;stroke:var(--line);stroke-width:.8;stroke-dasharray:5 4}
+.hyp{fill:none;stroke:var(--hyp);stroke-width:1.1;stroke-dasharray:4 3}
+.bar{fill:var(--cote);stroke:none;opacity:.55}
+.water{fill:var(--water);stroke:var(--line);stroke-width:.8}
+.dim{stroke:var(--cote);stroke-width:.8;fill:none}
+.ext{stroke:var(--cote);stroke-width:.5;fill:none;opacity:.7}
+.tx{fill:var(--ink);font-family:var(--f-mono)}
+.lbl{fill:var(--ink);font-family:var(--f-disp);font-weight:600;letter-spacing:.02em}
+.mut{fill:var(--muted);font-family:var(--f-mono)}
+.tc{fill:var(--cote);font-family:var(--f-mono);font-weight:500}
+.th{fill:var(--hyp);font-family:var(--f-mono)}
+.solid{fill:var(--line);stroke:none}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Ézéchiel 40 – 48 · storyboard des croquis · v1 validée le 24/11/2026</div>
+  <h1>Le temple d'Ézéchiel, planche par planche</h1>
+  <p class="lead">Dix-huit planches prévues pour passer du texte biblique aux volumes Blender. Chaque croquis est tracé à l'échelle à partir des cotes du texte (en coudées longues) ; ce qui est déduit ou supposé est en pointillé ocre. Valide ou corrige l'ordre, le contenu et les choix ci-dessous avant que je produise les croquis définitifs.</p>
+</header>
+
+<section class="decide">
+  <h2>Sept choix validés pour les croquis définitifs</h2>
+  <p style="margin:0;color:var(--muted)">Toutes les propositions ont été retenues. Pour le choix 7, la brique de siège reste en annexe ; le char et les roues (Ez 1 et 10) ne sont pas ajoutés.</p>
+  <ol>
+    <li><b>Valeur de la coudée.</b> Le texte impose la coudée longue (coudée + une palme, 40:5 ; 43:13). Proposition : <span class="m">1 coudée = 52,5 cm</span>, roseau = 6 coudées = <span class="m">3,15 m</span>. Les estimations vont de 51,8 à 53,3 cm. Dans Blender, je propose de modéliser en coudées (1 unité = 1 coudée) et d'appliquer l'échelle à la fin.</li>
+    <li><b>Enceinte de 500 coudées ou de 500 roseaux.</b> Le texte hébreu de 42:16-19 dit « roseaux » (≈ 1,6 km de côté), la Septante dit « coudées » (≈ 262 m). Proposition : 500 coudées, comme la plupart des traductions et comme 45:2.</li>
+    <li><b>Vestibule du temple : 11 ou 12 coudées</b> de profondeur (40:49, hébreu 11, Septante 12). Proposition : 12, qui donne exactement les 100 coudées de longueur de 41:13.</li>
+    <li><b>Lecture des portes.</b> « 25 coudées de toit à toit » (40:13) : je lis 6 + 13 + 6 (loge, passage, loge) mesurés au fond des loges, murs extérieurs en plus. Autre lecture possible : 25 hors-tout.</li>
+    <li><b>Hauteurs.</b> Le texte n'en donne presque aucune (mur 6, plate-forme 6, autel, table de bois). Proposition : hypothèses marquées, étages de 5 coudées (comme 1 Rois 6:10), marches de ½ coudée.</li>
+    <li><b>Portion sacrée.</b> Ordre des bandes nord→sud (Lévites, prêtres, ville), et 10 000 ou 20 000 de large en 45:1 (Septante). Proposition : 25 000 × 25 000 en coudées, découpé 10 000 / 10 000 / 5 000.</li>
+    <li><b>Annexes.</b> Garder la planche de la brique de siège (Ez 4:1-3) ? Ajouter les roues et le char de gloire (Ez 1 et 10), qui ne sont pas de l'architecture mais se modélisent bien ?</li>
+  </ol>
+  <div class="legend">
+    <span><i class="sw" style="background:var(--fill)"></i>maçonnerie cotée par le texte</span>
+    <span><i class="sw" style="border:1px dashed var(--hyp);background:transparent"></i>hypothèse / déduction</span>
+    <span><i class="sw" style="background:var(--cote);border-color:var(--cote)"></i>cotes en coudées longues</span>
+    <span><i class="sw" style="background:var(--soft)"></i>sols, cours, terrains</span>
+  </div>
+</section>
+
+<div class="grid" id="grid"></div>
+
+<section class="next">
+  <h2>Après validation</h2>
+  <ul>
+    <li>Croquis définitifs, un fichier par planche (SVG vectoriel + PNG 4K) dans <code>ezechiel/croquis/</code>, avec vues de plan, coupe et élévation là où le texte le permet.</li>
+    <li>Un tableau de cotes (<code>cotes.csv</code>) : chaque élément avec position, longueur, largeur et hauteur en coudées et en mètres, la référence du verset et le niveau de certitude (texte, déduit, hypothèse).</li>
+    <li>En option, un script Python pour Blender qui lit ce tableau et monte le « blocking » des volumes (murs, portes, temple, autel) en une commande, à affiner ensuite à la main.</li>
+  </ul>
+</section>
+
+<p class="src">Sources consultées : texte d'Ézéchiel 40-48 (Segond, ESV, NIV, LEB et Septante) ; notes de traduction sur 42:16 <a href="https://tips.translation.bible/story/translation-commentary-on-ezekiel-4216/">(tips.translation.bible)</a> ; variantes TM/LXX <a href="https://freely-given.org/OBD/par/EZE/C42V16.htm">(Open Bible Data)</a> ; valeur de la coudée longue <a href="https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/26/40">(note d'étude, 51,8 cm)</a> et <a href="https://ebible.org/study/content/texts/engbsb/EK40.html">(BSB, 53,3 cm)</a> ; autel 43:13-17 <a href="https://openenglishbible.org/oeb/2020.2/study/content/texts/comm_eng_tske/EK43.html">(commentaire)</a> ; <a href="https://en.wikipedia.org/wiki/Ezekiel_40">Ezekiel 40 (Wikipedia)</a>.</p>
+</div>
+
+<script>
+/*<planches>*/
+const NS="http://www.w3.org/2000/svg";
+function mk(vb,fs,draw,label){
+  const svg=document.createElementNS(NS,"svg");
+  svg.setAttribute("viewBox",vb);svg.setAttribute("role","img");svg.setAttribute("aria-label",label||"croquis");
+  const el=(n,a)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);svg.appendChild(e);return e;};
+  const g={
+    r:(x,y,w,h,c="wall")=>el("rect",{x,y,width:w,height:h,class:c}),
+    l:(x1,y1,x2,y2,c="ln")=>el("line",{x1,y1,x2,y2,class:c}),
+    p:(pts,c="ln",closed=true)=>el(closed?"polygon":"polyline",{points:pts.map(q=>q.join(",")).join(" "),class:c}),
+    c:(cx,cy,r,c="ln")=>el("circle",{cx,cy,r,class:c}),
+    path:(d,c="ln")=>el("path",{d,class:c,"fill-rule":"evenodd"}),
+    t:(x,y,s,o={})=>{const e=el("text",{x,y,class:o.c||"tx","font-size":fs*(o.s||1),"text-anchor":o.a||"middle","dominant-baseline":"middle"});
+      if(o.rot)e.setAttribute("transform",`rotate(${o.rot} ${x} ${y})`);e.textContent=s;return e;},
+    d:(x1,y1,x2,y2,label,off=0,o={})=>{
+      const dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),ux=dx/L,uy=dy/L,nx=-uy,ny=ux,sg=off<0?-1:1;
+      const ax=x1+nx*off,ay=y1+ny*off,bx=x2+nx*off,by=y2+ny*off;
+      if(off){[[x1,y1,ax,ay],[x2,y2,bx,by]].forEach(([px,py,qx,qy])=>el("line",{x1:px+nx*sg*fs*.15,y1:py+ny*sg*fs*.15,x2:qx+nx*sg*fs*.35,y2:qy+ny*sg*fs*.35,class:"ext"}));}
+      el("line",{x1:ax,y1:ay,x2:bx,y2:by,class:"dim"});
+      const k=fs*.32;[[ax,ay],[bx,by]].forEach(([px,py])=>el("line",{x1:px-(ux+nx)*k,y1:py-(uy+ny)*k,x2:px+(ux+nx)*k,y2:py+(uy+ny)*k,class:"dim"}));
+      let ang=Math.atan2(dy,dx)*180/Math.PI;if(ang>90.1||ang<-90.1)ang+=180;
+      const side=off===0?-1:sg, tx=(ax+bx)/2+nx*side*fs*.62, ty=(ay+by)/2+ny*side*fs*.62;
+      const e=el("text",{x:tx,y:ty,class:o.c||"tc","font-size":fs*(o.s||.85),"text-anchor":"middle","dominant-baseline":"middle",transform:`rotate(${ang} ${tx} ${ty})`});e.textContent=label;
+    },
+    chain:(pts,axis,at,off,o)=>{for(let i=0;i<pts.length-1;i++){const a=pts[i],b=pts[i+1];const lab=String(+(b-a).toFixed(2));
+      axis==="x"?g.d(a,at,b,at,lab,off,o):g.d(at,a,at,b,lab,off,o);}},
+    north:(x,y,s)=>{g.p([[x,y-s],[x-s*.45,y+s*.5],[x,y+s*.2],[x+s*.45,y+s*.5]],"solid");g.t(x,y-s*1.6,"N",{c:"lbl",s:.9});}
+  };
+  draw(g,fs);return svg;
+}
+/* porte à loges : x 0 = face extérieure, mirror = porte intérieure (vestibule côté parvis extérieur) */
+function gatePlan(g,mirror){
+  const R=(x,y,w,h,c)=>g.r(mirror?50-x-w:x,y,w,h,c);
+  R(0,-1.5,50,1.5,"wallh");R(0,25,50,1.5,"wallh");
+  [[0,6],[12,5],[23,5],[34,6],[48,2]].forEach(([x,w])=>{R(x,0,w,6);R(x,19,w,6);});
+  R(0,6,6,1.5);R(0,17.5,6,1.5);
+  [6,17,28].forEach(x=>{R(x,6,6,1,"bar");R(x,18,6,1,"bar");});
+  const X=x=>mirror?50-x:x;
+  [9,20,31].forEach(x=>{g.t(X(x),3,"loge",{s:.6,c:"mut"});g.t(X(x),22,"loge",{s:.6,c:"mut"});});
+  g.t(X(44),12.5,"vestibule",{s:.7,c:"lbl",rot:90});
+  [14.5,25.5,49].forEach(x=>{g.t(X(x),3,"♣",{s:.8,c:"mut"});g.t(X(x),22,"♣",{s:.8,c:"mut"});});
+}
+
+const P=[
+{n:"00",t:"Unités et échelle",r:"40:3-5 · 43:13 · 45:10-12",
+ vb:"-6 -14 345 92",fs:8,draw:g=>{
+  g.r(0,0,7.5,8,"soft2");g.t(12,4,"palme (tefah) ≈ 7,5 cm · empan (zeret) = ½ coudée",{a:"start",s:.85});
+  g.r(0,20,45,8,"soft");for(let i=1;i<6;i++)g.l(i*7.5,20,i*7.5,28,"thin");g.t(52,24,"coudée ordinaire = 6 palmes ≈ 45 cm",{a:"start",s:.85});
+  g.r(0,38,52.5,8,"soft2");for(let i=1;i<7;i++)g.l(i*7.5,38,i*7.5,46,"thin");g.t(60,42,"coudée longue = coudée + 1 palme = 7 palmes ≈ 52,5 cm",{a:"start",s:.85});
+  g.r(0,60,315,8,"wall");for(let i=1;i<6;i++)g.l(i*52.5,60,i*52.5,68,"ln");
+  g.d(0,60,315,60,"roseau (qaneh) = 6 coudées longues ≈ 3,15 m",-5,{s:.9});
+  g.t(0,76,"cordeau de lin : mesures longues du fleuve (47:3)",{a:"start",s:.75,c:"mut"});
+ },
+ cotes:["Instrument : un roseau de 6 coudées longues tenu par « l'homme d'airain » (40:3-5).","Coudée longue précisée deux fois (40:5 ; 43:13), donc toutes les cotes 40-48 sont dans cette unité.","Mesures de capacité et poids (45:10-12) : épha = bath, homer = 10 bath, sicle = 20 guéras. Utile pour l'autel et les offrandes, pas pour la géométrie."],
+ q:["Coudée longue retenue : 52,5 cm (choix 1).","Palme = 1/7 de coudée longue."],
+ bl:"Scène en coudées : <b>Unit Scale 0,525</b>, ou 1 unité = 1 coudée puis mise à l'échelle globale."},
+
+{n:"01",t:"Plan masse de l'enceinte",r:"40:5 · 40:17-27 · 40:47 · 41:12-15 · 42:15-20 · 45:2",
+ vb:"-48 -48 600 600",fs:12,draw:g=>{
+  g.r(0,0,500,500,"wall");g.r(6,6,488,488,"bg");
+  g.path("M6 6H494V494H6Z M50 50V450H450V50Z","soft");
+  [[6,6],[454,6],[6,464],[454,464]].forEach(([x,y])=>g.r(x,y,40,30,"soft2"));
+  const ch=(x,y,w,h)=>g.r(x,y,w,h,"wallh");
+  [56,90,124,158,192,274,308,342,376,410].forEach(x=>{ch(x,8,26,14);ch(x,478,26,14);});
+  [56,90,124,158,192,274,308,342,376,410].forEach(y=>ch(478,y,14,26));
+  g.r(450,237.5,50,25);g.r(237.5,0,25,50);g.r(237.5,450,25,50);
+  g.r(150,150,200,200,"bg");g.r(200,200,100,100,"soft2");
+  g.r(300,237.5,50,25);g.r(237.5,150,25,50);g.r(237.5,300,25,50);
+  g.r(100,200,100,100,"dash");g.r(100,225,83,50);g.r(183,234,17,32);
+  g.r(0,200,80,100);g.r(5,205,70,90,"bg");
+  g.r(100,150,100,50,"soft2");g.r(100,300,100,50,"soft2");
+  g.r(241,241,18,18,"wall");
+  g.t(250,232,"autel",{c:"lbl",s:.8});g.t(250,280,"parvis intérieur",{s:.7});
+  g.t(140,250,"temple",{c:"lbl"});g.t(40,250,"bâtiment",{c:"lbl",s:.85});g.t(40,265,"(binyan)",{s:.65,c:"mut"});
+  g.t(150,175,"chambres des prêtres",{s:.62});g.t(150,325,"chambres des prêtres",{s:.62});
+  g.t(400,120,"parvis extérieur",{c:"lbl"});g.t(400,30,"dallage + 30 chambres",{s:.62,c:"mut"});
+  g.t(26,21,"cuisine",{s:.55,c:"mut"});g.t(474,21,"cuisine",{s:.55,c:"mut"});
+  g.t(475,225,"porte E",{s:.7,c:"lbl"});g.t(475,278,"fermée (44:2)",{s:.55,c:"th"});
+  g.t(250,64,"porte N",{s:.7,c:"lbl"});g.t(250,437,"porte S",{s:.7,c:"lbl"});
+  g.t(20,186,"pas de porte à l'ouest",{s:.55,c:"mut",a:"start"});
+  g.chain([0,80,100,200,300,350,450,500],"x",500,22);g.d(0,500,500,500,"500",40);
+  g.chain([0,50,150,200,300,350,450,500],"y",500,-22);
+  g.d(0,0,500,0,"500 coudées (retenu, LXX ; TM : roseaux)",-20);
+  g.north(-28,40,11);
+ },
+ cotes:["Mur d'enceinte : 1 roseau d'épaisseur, 1 roseau de haut (40:5).","Carré de 500 × 500 (42:15-20 ; 45:2) avec 50 coudées d'espace libre autour (45:2).","Axe E-O : porte 50 + parvis 100 + porte 50 + parvis intérieur 100 + temple 100 + bâtiment et cour 100 = 500.","Axe N-S : 50 + 100 + 50 + 100 + 50 + 100 + 50 = 500 (portes N et S alignées).","Portes extérieures à 100 coudées des portes intérieures (40:19, 23, 27)."],
+ q:["500 coudées ou roseaux (choix 2).","Façade ouest du bâtiment collée au mur d'enceinte dans cette lecture.","Les 30 chambres réparties 10 par côté : déduction, le texte ne donne que le nombre."],
+ bl:"Plan de référence à importer en <b>image de fond</b> (vue de dessus) pour caler tous les autres objets."},
+
+{n:"02",t:"Porte extérieure — plan",r:"40:6-16 · 40:20-27",
+ vb:"-14 -9 74 42",fs:1.6,draw:g=>{
+  for(let i=0;i<=7;i++)g.l(-10.5+1.5*i,0,-10.5+1.5*i,25,"thin");g.t(-5.25,-2.8,"7 marches",{s:.7,c:"mut"});
+  gatePlan(g,false);
+  g.chain([0,6,12,17,23,28,34,40,48,50],"x",-1.5,-2.6);
+  g.d(0,26.5,50,26.5,"50 coudées",3);
+  g.d(50,0,50,25,"25",-3.2);g.d(42,6,42,19,"13",0,{s:.7});
+  g.d(3,7.5,3,17.5,"10",0,{s:.7});
+  g.t(-12.5,12.5,"extérieur",{s:.7,c:"lbl",rot:-90});g.t(55.5,12.5,"parvis",{s:.7,c:"lbl",rot:90});
+ },
+ cotes:["Seuil d'entrée : 1 roseau (6) ; loges : 1 roseau × 1 roseau, 3 de chaque côté ; entre les loges : 5.","Seuil côté vestibule : 6 ; vestibule : 8 ; ses piliers : 2 (40:9).","Ouverture de l'entrée : 10 ; « longueur de la porte » : 13 (40:11).","Barrière de 1 coudée devant les loges (40:12).","De toit à toit : 25 ; longueur totale 50, largeur 25 (40:13, 15, 21).","7 marches (40:22, 26) ; fenêtres grillagées et palmiers sur les piliers (40:16)."],
+ q:["Lecture 6 + 13 + 6 = 25 (choix 4) ; murs latéraux extérieurs en pointillé.","Profondeur des marches : 1,5 c. supposée."],
+ bl:"Un seul modèle de porte, <b>dupliqué en instance liée</b> pour E, N, S (même plan, 40:21-27)."},
+
+{n:"03",t:"Porte extérieure — coupe longitudinale",r:"40:6-16 · 40:22",
+ vb:"-14 -30 74 38",fs:1.6,draw:g=>{
+  g.l(-14,0,-10.5,0,"ln");for(let i=0;i<7;i++){const x=-10.5+1.5*i,y=-0.5*i;g.p([[x,y],[x,y-0.5],[x+1.5,y-0.5]],"ln",false);}
+  g.l(0,-3.5,60,-3.5,"ln");g.r(-14,0,4,0.01,"thin");
+  g.r(0,-23.5,50,20,"wallh");
+  [[6,6],[17,6],[28,6]].forEach(([x,w])=>{g.r(x,-12.5,w,9,"bg");g.r(x+2,-17,2,2.5,"thin");});
+  [[0,6],[12,5],[23,5],[34,6],[48,2]].forEach(([x,w])=>g.r(x,-12.5,w,0.01,"thin"));
+  [14.5,25.5,49].forEach(x=>{g.l(x,-4,x,-11,"thin");g.p([[x-1.2,-10],[x,-11.5],[x+1.2,-10]],"thin",false);});
+  g.t(44,-8,"vestibule",{s:.7,c:"lbl"});
+  g.d(0,-3.5,50,-3.5,"50",3);g.d(-11,-3.5,-11,0,"3,5 ?",-1.6,{c:"th",s:.7});
+  g.d(52,-3.5,52,-23.5,"hauteur ?",-1.8,{c:"th",s:.7});
+  g.t(25,-26,"hauteur non donnée : TM « piliers 60 coudées » (40:14), LXX 20",{s:.7,c:"th"});
+  g.t(9,-20,"fenêtres",{s:.6,c:"mut"});g.t(20,-6,"palmiers",{s:.6,c:"mut"});
+ },
+ cotes:["Le sol de la porte est au-dessus du sol extérieur : 7 marches (40:22).","Fenêtres « fermées » (grillagées) vers l'intérieur, sur les loges et les piliers (40:16).","Palmiers sculptés sur les piliers (40:16, 22, 26)."],
+ q:["Hauteur des marches : ½ coudée supposée, soit 3,5 c. au total.","Hauteur du bâtiment de porte et des loges : non donnée, à fixer (choix 5)."],
+ bl:"Coupe à mettre en <b>vue de face</b> pour caler les niveaux (sol extérieur 0, parvis +3,5)."},
+
+{n:"04",t:"Parvis extérieur, chambres et cuisines",r:"40:17-19 · 46:21-24",
+ vb:"222 -18 295 292",fs:7,draw:g=>{
+  g.r(225,0,275,6);g.r(494,0,6,270);
+  g.path("M225 6H494V270H450V50H225Z","soft");
+  g.r(454,6,40,30,"soft2");g.r(454,6,40,30,"ln");
+  [[462,14],[478,14],[462,26],[478,26]].forEach(([x,y])=>g.c(x,y,3,"thin"));
+  [274,308,342,376,410].forEach(x=>g.r(x,8,26,14,"wallh"));
+  [56,90,124,158,192].forEach(y=>g.r(478,y,14,26,"wallh"));
+  g.r(237.5,0,25,50);g.r(450,237.5,50,25);
+  g.r(237.5,150,25,50);g.r(300,237.5,50,25);g.r(262.5,200,37.5,70,"soft2");
+  g.t(474,46,"cuisine 40 × 30",{s:.7,c:"lbl"});
+  g.t(372,30,"chambres (30 au total)",{s:.7,c:"th"});
+  g.t(340,120,"parvis extérieur",{c:"lbl"});g.t(395,60,"dallage",{s:.7,c:"mut"});
+  g.t(285,240,"parvis int.",{s:.7,c:"mut"});
+  g.d(454,6,494,6,"40",-6);g.d(454,6,454,36,"30",6);
+  g.d(262.5,50,262.5,150,"100",-6);g.d(350,250,450,250,"100",8);
+  g.d(400,6,400,50,"50",-6);
+ },
+ cotes:["Dallage tout autour du parvis, 30 chambres donnant sur le dallage (40:17).","Le dallage « inférieur » a la largeur de la longueur des portes : 50 (40:18).","100 coudées de la porte extérieure à la porte intérieure (40:19).","Quatre petites cours aux angles, 40 × 30, avec foyers tout autour pour cuire les sacrifices du peuple (46:21-24)."],
+ q:["Taille des chambres non donnée : 26 × 14 supposé.","Disposition des foyers dans les cuisines : schématique."],
+ bl:"Chambres en <b>tableau de répétition</b> (Array modifier) le long des trois côtés."},
+
+{n:"05",t:"Portes intérieures et tables des sacrifices",r:"40:28-43",
+ vb:"-16 -12 72 50",fs:1.6,draw:g=>{
+  for(let i=0;i<=8;i++)g.l(-12+1.5*i,0,-12+1.5*i,25,"thin");g.t(-6,12.5,"8 marches",{s:.7,c:"mut",rot:-90});
+  gatePlan(g,true);
+  [[3,1],[6.5,1],[3,22.5],[6.5,22.5]].forEach(([x,y])=>g.r(x,y,2.5,1.5,"wallh"));
+  [[-10,-5],[-6.5,-5],[-10,28.5],[-6.5,28.5]].forEach(([x,y])=>g.r(x,y,2.5,1.5,"wallh"));
+  [[-15,-9],[-13,-9],[-15,32],[-13,32]].forEach(([x,y])=>g.r(x,y,1.5,1.5,"wall"));
+  g.t(5,-3.5,"tables (vestibule)",{s:.6,c:"th"});g.t(-6,-7,"tables (dehors)",{s:.6,c:"th"});
+  g.t(-14,-11,"pierre 1,5 × 1,5 × 1",{s:.6,c:"tc",a:"start"});
+  g.d(0,26.5,50,26.5,"50",3);
+  g.t(25,-9,"parvis extérieur ←   → parvis intérieur",{s:.7,c:"mut"});
+ },
+ cotes:["Trois portes intérieures (N, E, S), mêmes mesures que les extérieures : 50 × 25 (40:28-36).","Vestibule tourné vers le parvis extérieur, 8 marches (40:31, 34, 37).","Chambre de lavage des holocaustes près des piliers de la porte (40:38).","4 tables d'un côté, 4 de l'autre (8 pour égorger), plus 4 tables de pierre taillée : 1,5 × 1,5 × 1 de haut (40:39-42).","Crochets d'une palme fixés tout autour (40:43)."],
+ q:["Taille des 8 tables non donnée : 2,5 × 1,5 supposé.","Porte concernée par les tables : la nord d'après 40:40."],
+ bl:"Même maillage que la planche 02, <b>en miroir</b> (Scale X = −1), plus marches et tables."},
+
+{n:"06",t:"Parvis intérieur",r:"40:44-47 · 43:13 · 46:1-3",
+ vb:"-66 -58 222 212",fs:4,draw:g=>{
+  g.r(0,0,100,100,"soft2");
+  g.r(37.5,-50,25,50);g.r(37.5,100,25,50);g.r(100,37.5,50,25);
+  g.r(-60,25,43,50);g.r(-17,34,17,32);g.r(-5,43,0.01,14,"thin");
+  for(let i=0;i<=10;i++)g.l(0.4*i,43,0.4*i,57,"thin");
+  g.c(2,40,1.2,"wall");g.c(2,60,1.2,"wall");g.l(-60,22,-60,78,"dash");
+  g.r(41,41,18,18);g.r(44,44,12,12,"soft");
+  g.r(66,3,22,8,"wallh");g.r(66,89,22,8,"wallh");
+  g.t(77,15,"chambre → sud",{s:.65,c:"th"});g.t(77,85,"chambre → nord",{s:.65,c:"th"});
+  g.t(50,34,"autel",{c:"lbl",s:.8});g.t(-38,50,"temple",{c:"lbl"});
+  g.t(125,50,"porte E",{c:"lbl",s:.8,rot:90});g.t(50,-25,"porte N",{c:"lbl",s:.8,rot:-90});g.t(50,125,"porte S",{c:"lbl",s:.8,rot:-90});
+  g.d(0,0,100,0,"100",5);g.d(100,0,100,100,"100",5);g.d(41,59,59,59,"18",3,{s:.7});
+ },
+ cotes:["Carré de 100 × 100, l'autel devant la Maison (40:47).","Deux chambres : une près de la porte nord tournée vers le sud (prêtres de garde de la Maison), une près de la porte sud tournée vers le nord (prêtres de l'autel, fils de Tsadok) (40:44-46).","Porte intérieure est fermée les six jours ouvrables, ouverte le sabbat et à la nouvelle lune (46:1)."],
+ q:["Taille et place exacte des deux chambres : non données.","40:44 hébreu « porte est », Septante « porte sud » : suivi de la LXX."],
+ bl:"Sol du parvis intérieur au niveau +3,5 +4 (8 marches de ½ c.), à confirmer."},
+
+{n:"07",t:"Temple — plan",r:"40:48-49 · 41:1-11 · 41:13-14",
+ vb:"-24 -11 140 82",fs:2.2,draw:g=>{
+  g.p([[83,-5],[-5,-5],[-5,55],[83,55]],"dash",false);g.t(40,-7.5,"espace libre 5 (41:11)",{s:.6,c:"mut"});
+  g.r(0,0,83,5);g.r(0,45,83,5);g.r(0,0,5,50);
+  g.r(5,5,78,4,"soft");g.r(5,41,78,4,"soft");g.r(5,5,4,40,"soft");
+  for(let x=16;x<83;x+=7){g.l(x,5,x,9,"thin");g.l(x,41,x,45,"thin");}for(let y=13;y<41;y+=8)g.l(5,y,9,y,"thin");
+  g.r(9,9,74,6);g.r(9,35,74,6);g.r(9,9,6,32);
+  g.r(77,15,6,5);g.r(77,30,6,5);g.r(35,15,2,7);g.r(35,28,2,7);
+  g.r(83,9,17,6);g.r(83,35,17,6);g.r(95,15,5,3);g.r(95,32,5,3);
+  g.c(102,16,1.2,"wall");g.c(102,34,1.2,"wall");
+  for(let i=0;i<=10;i++)g.l(104+0.5*i,18,104+0.5*i,32,"thin");g.t(106.5,37,"10 marches",{s:.6,c:"mut"});
+  g.t(25,25,"Saint des saints",{c:"lbl",s:.75});g.t(57,25,"Saint (hêkal)",{c:"lbl",s:.8});g.t(89,25,"vestibule",{c:"lbl",s:.7,rot:90});
+  g.t(45,7,"chambres latérales",{s:.55,c:"mut"});
+  g.chain([0,5,9,15,35,37,77,83,95,100],"x",50,8,{s:.7});g.d(0,50,100,50,"100",14);
+  g.chain([0,5,9,15,35,41,45,50],"y",0,9,{s:.7});g.d(0,0,0,50,"50",16);
+ },
+ cotes:["Vestibule 20 de large × 12 (LXX ; 11 TM), piliers 5, entrée 14, côtés 3 ; deux colonnes près des piliers (40:48-49).","Saint : piliers 6, entrée 10, côtés 5 ; 40 × 20 (41:1-2).","Saint des saints : piliers 2, entrée 6, côtés 7 ; 20 × 20 (41:3-4).","Mur de la Maison 6 ; chambres latérales 4 ; mur extérieur des chambres 5 (41:5, 9).","Longueur 100, largeur de façade avec l'espace séparé 100 (41:13-14)."],
+ q:["Vestibule 12 retenu (choix 3) : la somme fait 100 exactement.","Nombre de marches (10) : Septante seulement.","Découpage des 30 chambres par étage : schématique."],
+ bl:"Plan à extruder <b>sur la plate-forme de 6</b> (planche 08) ; ouvertures en booléen."},
+
+{n:"08",t:"Temple — coupe transversale",r:"41:5-11",
+ vb:"-15 -41 80 52",fs:1.8,draw:g=>{
+  g.l(-15,0,65,0,"ln");g.r(-5,-6,60,6,"soft");g.t(-2.5,-3,"5",{s:.6,c:"mut"});
+  const side=(m)=>{const X=x=>m?50-x:x,R=(x,y,w,h,c)=>g.r(m?50-x-w:x,y,w,h,c);
+    R(0,-21,5,15);g.p([[9,-6],[15,-6],[15,-36],[11,-36],[11,-16],[10,-16],[10,-11],[9,-11]].map(([x,y])=>[X(x),y]),"wall");
+    g.l(X(5),-11,X(10),-11,"ln");g.l(X(5),-16,X(11),-16,"ln");g.r(m?39:0,-21.6,11,0.6,"wall");
+    g.t(X(7),-8.5,"4",{s:.6,c:"tc"});g.t(X(7.5),-13.5,"5",{s:.6,c:"th"});g.t(X(8),-18.5,"6",{s:.6,c:"th"});};
+  side(false);side(true);
+  g.l(15,-36,35,-36,"hyp");g.t(25,-38.5,"plafond : hauteur non donnée",{s:.65,c:"th"});
+  g.t(25,-20,"Saint",{c:"lbl"});g.t(25,-3,"plate-forme : 1 roseau",{s:.65});
+  g.chain([0,5,9,15,35,41,45,50],"x",0,3,{s:.65});g.d(0,0,50,0,"50",7.5);
+  g.d(57,0,57,-6,"6",2,{s:.75});g.d(-8,-6,-8,-21,"3 × 5 ?",-1.5,{c:"th",s:.7});
+ },
+ cotes:["Chambres latérales sur trois étages, 30 par étage (41:6).","Elles s'élargissent en montant : appuis en retrait sur le mur de la Maison, sans y entrer (41:6-7).","Plate-forme tout autour, haute d'un roseau plein de 6 coudées (41:8).","Mur extérieur des chambres 5 ; espace libre 5 ; 20 coudées jusqu'aux chambres des prêtres (41:9-11)."],
+ q:["Largeurs 4 / 5 / 6 par étage : déduites de 1 Rois 6:6.","Hauteur d'étage 5 : reprise de 1 Rois 6:10.","Hauteur de la nef : non donnée."],
+ bl:"Le retrait d'un étage à l'autre se fait par <b>3 boîtes empilées</b>, pas par un mur incliné."},
+
+{n:"09",t:"Décor et menuiserie",r:"41:15-26",
+ vb:"0 -2 120 30",fs:1.6,draw:g=>{
+  g.l(0,19,52,19,"thin");g.l(0,4,52,4,"thin");
+  [5,25,45].forEach(x=>{g.l(x,7,x,18,"ln");[[-3,9],[3,9],[-3.5,12],[3.5,12]].forEach(([dx,dy])=>g.l(x,dy-1,x+dx,dy,"thin"));});
+  [15,35].forEach(x=>{g.r(x-4,8,8,10,"soft2");g.c(x-2,10,1.3,"ln");g.c(x+2,10,1.3,"ln");g.t(x-2,10,"H",{s:.55});g.t(x+2,10,"L",{s:.55});
+    g.p([[x-4,12],[x-7,9],[x-4,14]],"thin",false);g.p([[x+4,12],[x+7,9],[x+4,14]],"thin",false);});
+  g.t(26,1,"chérubin à deux faces (homme ← / → lion) entre deux palmiers",{s:.62});
+  g.t(26,22,"du sol jusqu'au-dessus de l'entrée · sans échelle",{s:.6,c:"mut"});
+  g.r(57,10,4,2);g.r(71,10,4,2);g.p([[61,12],[63.5,15],[66,12]],"ln",false);g.p([[71,12],[68.5,15],[66,12]],"ln",false);
+  g.d(61,10,71,10,"10",-1.5,{s:.7});g.t(66,19,"2 battants × 2 volets",{s:.62});g.t(66,21.5,"pliants (porte du Saint)",{s:.6,c:"mut"});
+  g.r(95,8,6,9,"soft2");g.r(104,11,6,6,"soft");g.l(95,17,112,17,"thin");
+  g.d(95,17,101,17,"2",1.8,{s:.7});g.d(101,8,101,17,"3",-1.3,{s:.7});g.d(104,11,110,11,"2 (LXX)",-1.3,{s:.6});
+  g.t(102,4,"autel de bois / table (41:22)",{s:.62});g.t(102,22,"élévation · plan · ×3",{s:.6,c:"mut"});
+ },
+ cotes:["Boiseries du sol aux fenêtres, fenêtres grillagées (41:16).","Chérubins et palmiers alternés, chaque chérubin a deux faces : homme vers un palmier, lion vers l'autre (41:18-20).","Montants de la porte du Saint carrés (41:21).","Autel de bois : haut 3, long 2, « c'est la table devant l'Éternel » (41:22).","Saint et Saint des saints : deux portes chacun, chaque porte à deux battants pivotants (41:23-24) ; auvent de bois devant le vestibule (41:25)."],
+ q:["Largeur de l'autel de bois : 2 dans la Septante, absente de l'hébreu.","Dessin des chérubins : libre, à valider sur références."],
+ bl:"Frise en <b>texture ou relief (displacement)</b> sur les murs intérieurs ; portes en objets séparés animables."},
+
+{n:"10",t:"Bâtiment occidental (binyan)",r:"41:12-15",
+ vb:"-16 -8 130 124",fs:3.5,draw:g=>{
+  g.r(0,0,80,100);g.r(5,5,70,90,"bg");g.r(80,0,20,100,"soft");g.r(100,25,12,50,"wallh");
+  g.t(40,50,"bâtiment",{c:"lbl"});g.t(40,57,"face vers l'ouest",{s:.65,c:"mut"});
+  g.t(90,50,"espace séparé (gizrah)",{s:.65,rot:90});g.t(106,50,"temple",{s:.65,c:"th",rot:90});
+  g.d(5,95,75,95,"70",-4);g.d(75,5,75,95,"90",4);
+  g.d(0,100,80,100,"80",5);g.d(0,100,100,100,"100",11);g.d(0,0,0,100,"100",5);
+  g.d(0,0,5,0,"5",-3,{s:.7});
+  g.north(108,8,4);
+ },
+ cotes:["Face à l'espace séparé, côté ouest : 70 de large, 90 de long, mur de 5 tout autour (41:12).","Espace séparé + bâtiment avec ses murs : 100 de long (41:13).","Hors-tout : 80 × 100."],
+ q:["Orientation des 70 et 90 : 70 E-O et 90 N-S retenu, ce qui donne 80 + 20 = 100.","Fonction et portes : rien dans le texte."],
+ bl:"Simple volume creux ; hauteur à fixer (hypothèse identique au temple)."},
+
+{n:"11",t:"Chambres saintes des prêtres",r:"42:1-14 · 46:19-20",
+ vb:"-16 -10 134 126",fs:3,draw:g=>{
+  g.r(0,0,50,20,"soft2");g.r(50,0,50,1.2);g.r(0,20,100,10,"soft");g.r(0,30,100,20,"soft2");g.r(0,0,100,50,"ln");
+  for(let x=10;x<50;x+=10)g.l(x,0,x,20,"thin");for(let x=10;x<100;x+=10)g.l(x,30,x,50,"thin");
+  g.p([[106,25],[101,22.5],[101,27.5]],"solid");g.t(110,32,"entrée E",{s:.6,c:"mut"});
+  g.r(-13,30,10,20,"wallh");g.t(-8,40,"cuisson",{s:.55,c:"th",rot:90});
+  g.t(25,10,"aile côté parvis ext. 50",{s:.6});g.t(50,25,"allée 10",{s:.65,c:"lbl"});g.t(50,40,"aile côté temple 100",{s:.65});
+  g.t(75,5,"mur 50 (42:7)",{s:.55,c:"mut"});
+  g.d(0,50,100,50,"100",4);g.d(100,0,100,50,"50",-6);g.chain([0,20,30,50],"y",0,5,{s:.7});
+  const G=110;g.l(-2,G,54,G,"ln");
+  [[0,20],[0,17],[0,14]].forEach(([x,w],i)=>g.r(x,G-5*(i+1),w,5,"soft2"));
+  [[30,20],[33,17],[36,14]].forEach(([x,w],i)=>g.r(x,G-5*(i+1),w,5,"soft2"));
+  g.t(25,G+4,"coupe N–S : 3 étages en retrait (galeries)",{s:.65,c:"th"});
+  g.d(54,G,54,G-15,"3 × 5 ?",-2,{c:"th",s:.7});
+  g.t(80,G-8,"nord ←      → sud",{s:.6,c:"mut"});
+ },
+ cotes:["Bâtiment de 100 de long, porte au nord, 50 de large, face à l'espace séparé (42:1-2).","Galeries sur trois étages ; les étages supérieurs sont plus étroits (42:3, 5-6).","Allée de 10 de large devant les chambres (42:4).","Mur extérieur de 50 ; chambres côté parvis extérieur 50, côté temple 100 (42:7-8).","Même bâtiment au sud (42:10-12) ; lieu de cuisson des prêtres à l'extrémité ouest (46:19-20)."],
+ q:["Découpage 20 + 10 + 20 : reconstruction, non donné.","« Chemin d'une coudée » (TM 42:4) contre « 100 de long » (LXX).","Recul des galeries (3 c. par étage) supposé."],
+ bl:"Deux bâtiments identiques <b>en miroir</b> N/S ; étages en blocs empilés."},
+
+{n:"12",t:"Autel des holocaustes",r:"43:13-17",
+ vb:"-17 -24 76 32",fs:1.3,draw:g=>{
+  g.l(-17,0,57,0,"thin");
+  g.r(-9,-1,18,1);g.r(-8,-3,16,2);g.r(-7,-7,14,4);g.r(-6,-11,12,4,"soft2");
+  g.r(-6,-12,1,1);g.r(5,-12,1,1);g.r(-9,-1.5,0.5,0.5,"wall");g.r(8.5,-1.5,0.5,0.5,"wall");
+  g.p([[16,0],[16,-1],[14,-1],[14,-3],[12,-3],[12,-5],[10,-5],[10,-7],[7,-7]],"hyp",false);
+  g.t(14,-8.5,"escalier E ?",{s:.7,c:"th"});g.t(0,-9,"foyer (harel / ariel)",{s:.65});
+  g.chain([0,-1,-3,-7,-11],"y",-9,-2.2,{s:.75});g.d(-6,-12,-6,-11,"1 ?",-4.6,{c:"th",s:.6});
+  g.d(-9,0,9,0,"18",1.6);g.d(-6,-12,6,-12,"12",-1.2,{s:.75});
+  [[18,"soft"],[16,"soft2"],[14,"soft"],[12,"soft2"]].forEach(([s,c])=>g.r(38-s/2,-10-s/2,s,s,c));
+  [[-6,-6],[5,-6],[-6,5],[5,5]].forEach(([dx,dy])=>g.r(38+dx,-10+dy,1,1));
+  g.r(47,-11.5,5,3,"hyp");g.t(38,-10,"foyer 12 × 12",{s:.65});
+  g.d(29,-1,47,-1,"18",1.4,{s:.75});g.d(31,-17,45,-17,"14",-1.3,{s:.7});
+  g.t(38,-21.5,"plan",{c:"lbl"});g.t(0,-15,"élévation (face nord)",{c:"lbl"});g.north(54,-19,1.6);
+ },
+ cotes:["Base : 1 de haut, 1 de large, bordure d'un empan (43:13).","De la base au petit rebord : 2 de haut, retrait 1 ; du petit au grand rebord : 4 de haut, retrait 1 (43:14).","Foyer : 4 de haut, 4 cornes au-dessus (43:15) ; 12 × 12 (43:16).","Rebord : 14 × 14, bordure ½ coudée, base 1 ; marches tournées vers l'est (43:17).","Paliers : 18 → 16 → 14 → 12 ; hauteur totale 11 sans les cornes."],
+ q:["Hauteur des cornes : non donnée (1 c. supposée).","Forme de l'escalier : seulement « vers l'est »."],
+ bl:"Quatre <b>boîtes concentriques</b> + 4 cornes ; idéal pour un premier test d'échelle."},
+
+{n:"13",t:"Le fleuve sorti du temple",r:"47:1-12",
+ vb:"-5 -7.5 98 15",fs:1.05,draw:g=>{
+  g.p([[0,0],[88,0],[88,5.6],[80,5],[60,2],[40,1],[20,0.3],[0,0.1]],"water");
+  g.p([[0,0.1],[20,0.3],[40,1],[60,2],[80,5],[88,5.6]],"ln",false);
+  const man=(x,f)=>{g.l(x,f,x,f-2.2,"ln");g.c(x,f-2.7,.45,"ln");g.l(x-.8,f-1.6,x+.8,f-1.6,"thin");};
+  man(20,0.3);man(40,1);man(60,2);g.l(78,-0.2,81,-0.2,"ln");g.c(77.4,-0.3,.45,"ln");
+  [[20,"1000 c. · chevilles"],[40,"2000 · genoux"],[60,"3000 · reins"],[80,"4000 · à la nage"]].forEach(([x,s])=>{g.l(x,-3.5,x,6,"dash");g.t(x,-4.5,s,{s:.8});});
+  g.t(0,-6.3,"seuil, côté sud de l'autel",{s:.7,a:"start",c:"mut"});g.t(88,-6.3,"→ Araba, mer Morte",{s:.7,a:"end",c:"mut"});
+  g.t(44,6.8,"profil en long · profondeurs exagérées",{s:.7,c:"th"});
+ },
+ cotes:["L'eau sort sous le seuil de la Maison, vers l'est, au sud de l'autel (47:1).","Elle ressort à droite de la porte extérieure est, qui reste fermée (47:2).","Tous les 1000 coudées : chevilles, genoux, reins, puis une rivière à traverser à la nage (47:3-5).","Arbres fruitiers des deux côtés, l'eau assainit la mer Morte (47:7-12)."],
+ q:["Profondeurs en coudées : estimées d'après la stature humaine."],
+ bl:"Plutôt une <b>scène paysage</b> séparée, liée au plan masse par le seuil du temple."},
+
+{n:"14",t:"Portion sacrée (terumah)",r:"45:1-8 · 48:8-22",
+ vb:"-10 -3.5 45 32",fs:.9,draw:g=>{
+  g.r(-8,0,8,25,"soft");g.r(25,0,8,25,"soft");
+  g.r(0,0,25,10,"soft2");g.r(0,10,25,10,"bg");g.r(0,20,25,5,"soft2");
+  g.r(12.2,14.7,0.6,0.6,"wall");g.l(12.8,14.7,16,12.5,"thin");g.t(16.2,12,"sanctuaire 500 (+50)",{s:.75,a:"start"});
+  g.r(10,20,5,5,"ln");g.r(10.25,20.25,4.5,4.5,"wall");
+  g.t(12.5,5,"Lévites",{c:"lbl"});g.t(12.5,17.5,"prêtres",{c:"lbl"});g.t(12.5,22.5,"ville",{s:.8});
+  g.t(5,22.5,"cultures",{s:.7,c:"mut"});g.t(20,22.5,"cultures",{s:.7,c:"mut"});
+  g.t(-4,12.5,"prince ← Mer",{s:.8,rot:-90});g.t(29,12.5,"prince → Jourdain",{s:.8,rot:90});
+  g.d(0,0,25,0,"25 000",-1.6);g.chain([0,10,20,25],"y",25,-1.2,{s:.75});
+  g.d(10,25,15,25,"5 000",1.3,{s:.7});
+ },
+ cotes:["Prélèvement de 25 000 × 25 000, carré (48:20).","Prêtres : 25 000 × 10 000, sanctuaire au milieu (45:3-4 ; 48:10).","Lévites : 25 000 × 10 000 (45:5 ; 48:13).","Ville : 25 000 × 5 000 ; ville 4 500 au carré, banlieue 250 ; terres de culture 10 000 de chaque côté (48:15-18).","Le reste à l'est et à l'ouest revient au prince (45:7 ; 48:21)."],
+ q:["Unité : coudées (≈ 13 km) ou roseaux (≈ 79 km) ?","Ordre des bandes (choix 6).","45:1 : 10 000 (TM) ou 20 000 (LXX)."],
+ bl:"Échelle territoriale : <b>fichier Blender séparé</b>, en km, avec relief simplifié."},
+
+{n:"15",t:"La ville et ses douze portes",r:"48:15-20 · 48:30-35",
+ vb:"-14 -14 73 73",fs:1.6,draw:g=>{
+  g.r(-2.5,-2.5,50,50,"dash");g.r(0,0,45,45,"soft2");g.r(0,0,45,45,"ln");
+  const pos=[7.5,22.5,37.5];
+  const N=["Ruben","Juda","Lévi"],E=["Joseph","Benjamin","Dan"],S=["Siméon","Issacar","Zabulon"],W=["Gad","Aser","Nephtali"];
+  pos.forEach((p,i)=>{g.r(p-1.2,-0.8,2.4,1.6);g.t(p,-5,N[i],{s:.75});
+    g.r(44.2,p-1.2,1.6,2.4);g.t(50,p,E[i],{s:.75,rot:90});
+    g.r(p-1.2,44.2,2.4,1.6);g.t(p,50,S[i],{s:.75});
+    g.r(-0.8,p-1.2,1.6,2.4);g.t(-5,p,W[i],{s:.75,rot:-90});});
+  g.t(22.5,20,"YHWH-Shamma",{c:"lbl",s:1.2});g.t(22.5,24,"« l'Éternel est là » (48:35)",{s:.7,c:"mut"});
+  g.d(0,45,45,45,"4 500",8.5,{s:.8});g.d(45,0,45,45,"4 500",-9,{s:.8});
+  g.t(22.5,-10,"banlieue 250 tout autour · périmètre 18 000",{s:.7,c:"mut"});g.north(-10,-9,1.8);
+ },
+ cotes:["Carré de 4 500 de côté, banlieue de 250 (48:16-17).","Trois portes par côté, aux noms des tribus (48:31-34) : N Ruben, Juda, Lévi · E Joseph, Benjamin, Dan · S Siméon, Issacar, Zabulon · O Gad, Aser, Nephtali.","Périmètre 18 000 ; nom de la ville : « L'Éternel est là » (48:35)."],
+ q:["Ordre des trois portes sur chaque côté : celui de l'énumération, sens non précisé.","Dessin des portes : aucune cote, reprise possible du modèle de la planche 02."],
+ bl:"Les 12 portes = <b>instances</b> du modèle de porte, à l'échelle de la ville."},
+
+{n:"16",t:"Partage du pays entre les tribus",r:"47:13-48:29",
+ vb:"0 0 100 140",fs:3.2,draw:g=>{
+  const T=["Dan","Aser","Nephtali","Manassé","Éphraïm","Ruben","Juda","PORTION SACRÉE","Benjamin","Siméon","Issacar","Zabulon","Gad"];
+  let y=10;T.forEach((n,i)=>{const h=i===7?13:8.6;g.r(18,y,64,h,i===7?"soft2":(i%2?"soft":"bg"));g.t(50,y+h/2,n,{c:i===7?"lbl":"tx",s:i===7?.85:.8});y+=h;});
+  g.r(18,10,64,y-10,"ln");
+  g.t(10,(y+10)/2,"Grande Mer (Méditerranée)",{rot:-90,s:.75,c:"mut"});g.t(90,(y+10)/2,"Jourdain · mer Morte",{rot:90,s:.75,c:"mut"});
+  g.t(50,5,"nord : Hethlôn, Hamath, Hatsar-Énon (47:15-17)",{s:.65,c:"mut"});
+  g.t(50,y+5,"sud : Tamar, Meriba-de-Qadesh, torrent d'Égypte (47:19)",{s:.65,c:"mut"});
+  g.t(50,y+10,"schéma sans échelle : bandes d'est en ouest",{s:.6,c:"th"});
+ },
+ cotes:["Douze bandes d'est en ouest ; Joseph reçoit deux parts (Manassé, Éphraïm) (47:13).","Ordre du nord au sud : Dan, Aser, Nephtali, Manassé, Éphraïm, Ruben, Juda, portion sacrée, Benjamin, Siméon, Issacar, Zabulon, Gad (48:1-29).","Frontières : 47:15-20. L'étranger reçoit sa part dans la tribu où il habite (47:22-23)."],
+ q:["Largeur des bandes tribales : non donnée (égales supposées)."],
+ bl:"Carte d'ensemble : un <b>plan texturé</b> suffit, ou un relief réel si la vidéo le demande."},
+
+{n:"A",t:"Annexe — la brique de siège",r:"4:1-3",
+ vb:"-12 -8 58 38",fs:1.6,draw:g=>{
+  g.r(0,0,34,22,"soft2");g.r(0,0,34,22,"ln");
+  g.r(10,6,14,10,"wall");g.t(17,11,"Jérusalem",{s:.7});
+  g.r(7,3,20,16,"hyp");g.t(17,20.5,"mur de siège · terrasse",{s:.6,c:"th"});
+  [[4,11],[30,11],[17,1.6]].forEach(([x,y])=>g.c(x,y,1,"ln"));g.t(3,1.5,"béliers",{s:.6,c:"mut",a:"start"});
+  g.l(-6,-3,-6,25,"ln");g.r(-7,-3,2,28,"wall");g.t(-9.5,11,"plaque de fer",{s:.65,rot:-90});
+  g.t(17,-4,"brique d'argile, ≈ 30 × 20 cm (dimension supposée)",{s:.65,c:"mut"});
+ },
+ cotes:["Une brique devant le prophète, Jérusalem gravée dessus (4:1).","Siège, mur de siège, terrasse, camps, béliers tout autour (4:2).","Une poêle (plaque) de fer en mur entre lui et la ville (4:3)."],
+ q:["À garder dans le projet ? (choix 7)"],
+ bl:"Maquette d'objet : petite échelle, intéressante en <b>plan rapproché</b>."}
+];
+/*</planches>*/
+
+const grid=document.getElementById("grid");
+P.forEach(p=>{
+  const a=document.createElement("article");a.className="pl";a.id="planche-"+p.n;
+  a.innerHTML=`<div class="pl-head"><h3>${p.t}</h3><span class="num">PLANCHE ${p.n}</span></div>
+  <div class="refs">Ézéchiel ${p.r}</div><div class="fig"></div>
+  <div class="body"><div class="cols"><div><h4>Ce que dit le texte</h4><ul>${p.cotes.map(c=>`<li>${c}</li>`).join("")}</ul></div>
+  <div><h4>À trancher</h4><ul class="q">${p.q.map(c=>`<li>${c}</li>`).join("")}</ul></div></div>
+  <div class="blend">Blender · ${p.bl}</div></div>`;
+  try{a.querySelector(".fig").appendChild(mk(p.vb,p.fs,p.draw,p.t));}catch(e){a.querySelector(".fig").textContent="Croquis indisponible : "+e.message;}
+  grid.appendChild(a);
+});
+</script>

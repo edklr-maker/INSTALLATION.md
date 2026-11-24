@@ -1,0 +1,302 @@
+﻿id;nom;categorie;planche;versets;certitude;forme;x_min;x_max;y_min;y_max;z_min;z_max;centre_x;centre_y;centre_z;long_x;larg_y;haut_z;long_x_m;larg_y_m;haut_z_m;note
+1;Mur d'enceinte nord;enceinte;01;"40:5 ; 42:15-20";texte;boite;-250;-12.5;244;250;0;6;-131.25;247;3;237.5;6;6;124.688;3.15;3.15;
+2;Mur d'enceinte sud;enceinte;01;"40:5 ; 42:15-20";texte;boite;-250;-12.5;-250;-244;0;6;-131.25;-247;3;237.5;6;6;124.688;3.15;3.15;
+3;Mur d'enceinte est;enceinte;01;"40:5 ; 42:15-20";texte;boite;244;250;12.5;250;0;6;247;131.25;3;6;237.5;6;3.15;124.688;3.15;
+4;Mur d'enceinte nord;enceinte;01;"40:5 ; 42:15-20";texte;boite;12.5;250;244;250;0;6;131.25;247;3;237.5;6;6;124.688;3.15;3.15;
+5;Mur d'enceinte sud;enceinte;01;"40:5 ; 42:15-20";texte;boite;12.5;250;-250;-244;0;6;131.25;-247;3;237.5;6;6;124.688;3.15;3.15;
+6;Mur d'enceinte est;enceinte;01;"40:5 ; 42:15-20";texte;boite;244;250;-250;-12.5;0;6;247;-131.25;3;6;237.5;6;3.15;124.688;3.15;
+7;Mur d'enceinte ouest;enceinte;01;"40:5 ; 42:15-20";texte;boite;-250;-244;-250;250;0;6;-247;0;3;6;500;6;3.15;262.5;3.15;
+8;Terre-plein du parvis extérieur;terrain;01;40:17;hypothese;boite;-244;244;-244;244;0;3.5;0;0;1.75;488;488;3.5;256.2;256.2;1.838;niveau déduit des 7 marches de 1/2 coudée
+9;Terrasse du parvis intérieur et du temple;terrain;06;40:31;hypothese;boite;-150;50;-50;50;3.5;7.5;-50;0;5.5;200;100;4;105;52.5;2.1;niveau déduit des 8 marches de 1/2 coudée
+10;Dallage nord;terrain;04;40:17-18;deduit;boite;-244;244;200;244;3.5;3.7;0;222;3.6;488;44;0.2;256.2;23.1;0.105;
+11;Dallage sud;terrain;04;40:17-18;deduit;boite;-244;244;-244;-200;3.5;3.7;0;-222;3.6;488;44;0.2;256.2;23.1;0.105;
+12;Dallage ouest;terrain;04;40:17-18;deduit;boite;-244;-200;-200;200;3.5;3.7;-222;0;3.6;44;400;0.2;23.1;210;0.105;
+13;Dallage est;terrain;04;40:17-18;deduit;boite;200;244;-200;200;3.5;3.7;222;0;3.6;44;400;0.2;23.1;210;0.105;
+14;Porte extérieure est - pilier 1 gauche;portes;02;40:6-16;texte;boite;244;250;6.5;12.5;3.5;23.5;247;9.5;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+15;Porte extérieure est - pilier 1 droit;portes;02;40:6-16;texte;boite;244;250;-12.5;-6.5;3.5;23.5;247;-9.5;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+16;Porte extérieure est - pilier 2 gauche;portes;02;40:6-16;texte;boite;233;238;6.5;12.5;3.5;23.5;235.5;9.5;13.5;5;6;20;2.625;3.15;10.5;hauteur supposée
+17;Porte extérieure est - pilier 2 droit;portes;02;40:6-16;texte;boite;233;238;-12.5;-6.5;3.5;23.5;235.5;-9.5;13.5;5;6;20;2.625;3.15;10.5;hauteur supposée
+18;Porte extérieure est - pilier 3 gauche;portes;02;40:6-16;texte;boite;222;227;6.5;12.5;3.5;23.5;224.5;9.5;13.5;5;6;20;2.625;3.15;10.5;hauteur supposée
+19;Porte extérieure est - pilier 3 droit;portes;02;40:6-16;texte;boite;222;227;-12.5;-6.5;3.5;23.5;224.5;-9.5;13.5;5;6;20;2.625;3.15;10.5;hauteur supposée
+20;Porte extérieure est - pilier 4 gauche;portes;02;40:6-16;texte;boite;210;216;6.5;12.5;3.5;23.5;213;9.5;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+21;Porte extérieure est - pilier 4 droit;portes;02;40:6-16;texte;boite;210;216;-12.5;-6.5;3.5;23.5;213;-9.5;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+22;Porte extérieure est - pilier 5 gauche;portes;02;40:6-16;texte;boite;200;202;6.5;12.5;3.5;23.5;201;9.5;13.5;2;6;20;1.05;3.15;10.5;hauteur supposée
+23;Porte extérieure est - pilier 5 droit;portes;02;40:6-16;texte;boite;200;202;-12.5;-6.5;3.5;23.5;201;-9.5;13.5;2;6;20;1.05;3.15;10.5;hauteur supposée
+24;Porte extérieure est - jambage entrée gauche;portes;02;40:6-16;deduit;boite;244;250;5;6.5;3.5;23.5;247;5.75;13.5;6;1.5;20;3.15;0.788;10.5;ouverture de 10 (40:11)
+25;Porte extérieure est - jambage entrée droit;portes;02;40:6-16;deduit;boite;244;250;-6.5;-5;3.5;23.5;247;-5.75;13.5;6;1.5;20;3.15;0.788;10.5;ouverture de 10 (40:11)
+26;Porte extérieure est - barrière loge 1 gauche;portes;02;40:6-16;deduit;boite;238;244;5.5;6.5;3.5;4.5;241;6;4;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+27;Porte extérieure est - barrière loge 1 droite;portes;02;40:6-16;deduit;boite;238;244;-6.5;-5.5;3.5;4.5;241;-6;4;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+28;Porte extérieure est - barrière loge 2 gauche;portes;02;40:6-16;deduit;boite;227;233;5.5;6.5;3.5;4.5;230;6;4;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+29;Porte extérieure est - barrière loge 2 droite;portes;02;40:6-16;deduit;boite;227;233;-6.5;-5.5;3.5;4.5;230;-6;4;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+30;Porte extérieure est - barrière loge 3 gauche;portes;02;40:6-16;deduit;boite;216;222;5.5;6.5;3.5;4.5;219;6;4;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+31;Porte extérieure est - barrière loge 3 droite;portes;02;40:6-16;deduit;boite;216;222;-6.5;-5.5;3.5;4.5;219;-6;4;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+32;Porte extérieure est - mur latéral gauche;portes;02;40:6-16;hypothese;boite;200;250;12.5;14;3.5;23.5;225;13.25;13.5;50;1.5;20;26.25;0.788;10.5;25 lu de fond de loge à fond de loge
+33;Porte extérieure est - mur latéral droit;portes;02;40:6-16;hypothese;boite;200;250;-14;-12.5;3.5;23.5;225;-13.25;13.5;50;1.5;20;26.25;0.788;10.5;25 lu de fond de loge à fond de loge
+34;Porte extérieure est - marche 1;portes;02;40:22, 26;texte;boite;259;260.5;-12.5;12.5;0;0.5;259.75;0;0.25;1.5;25;0.5;0.788;13.125;0.263;nombre de marches du texte, hauteur et giron supposés
+35;Porte extérieure est - marche 2;portes;02;40:22, 26;texte;boite;257.5;259;-12.5;12.5;0;1;258.25;0;0.5;1.5;25;1;0.788;13.125;0.525;nombre de marches du texte, hauteur et giron supposés
+36;Porte extérieure est - marche 3;portes;02;40:22, 26;texte;boite;256;257.5;-12.5;12.5;0;1.5;256.75;0;0.75;1.5;25;1.5;0.788;13.125;0.788;nombre de marches du texte, hauteur et giron supposés
+37;Porte extérieure est - marche 4;portes;02;40:22, 26;texte;boite;254.5;256;-12.5;12.5;0;2;255.25;0;1;1.5;25;2;0.788;13.125;1.05;nombre de marches du texte, hauteur et giron supposés
+38;Porte extérieure est - marche 5;portes;02;40:22, 26;texte;boite;253;254.5;-12.5;12.5;0;2.5;253.75;0;1.25;1.5;25;2.5;0.788;13.125;1.312;nombre de marches du texte, hauteur et giron supposés
+39;Porte extérieure est - marche 6;portes;02;40:22, 26;texte;boite;251.5;253;-12.5;12.5;0;3;252.25;0;1.5;1.5;25;3;0.788;13.125;1.575;nombre de marches du texte, hauteur et giron supposés
+40;Porte extérieure est - marche 7;portes;02;40:22, 26;texte;boite;250;251.5;-12.5;12.5;0;3.5;250.75;0;1.75;1.5;25;3.5;0.788;13.125;1.838;nombre de marches du texte, hauteur et giron supposés
+41;Porte extérieure nord - pilier 1 gauche;portes;02;40:6-16;texte;boite;-12.5;-6.5;244;250;3.5;23.5;-9.5;247;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+42;Porte extérieure nord - pilier 1 droit;portes;02;40:6-16;texte;boite;6.5;12.5;244;250;3.5;23.5;9.5;247;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+43;Porte extérieure nord - pilier 2 gauche;portes;02;40:6-16;texte;boite;-12.5;-6.5;233;238;3.5;23.5;-9.5;235.5;13.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+44;Porte extérieure nord - pilier 2 droit;portes;02;40:6-16;texte;boite;6.5;12.5;233;238;3.5;23.5;9.5;235.5;13.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+45;Porte extérieure nord - pilier 3 gauche;portes;02;40:6-16;texte;boite;-12.5;-6.5;222;227;3.5;23.5;-9.5;224.5;13.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+46;Porte extérieure nord - pilier 3 droit;portes;02;40:6-16;texte;boite;6.5;12.5;222;227;3.5;23.5;9.5;224.5;13.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+47;Porte extérieure nord - pilier 4 gauche;portes;02;40:6-16;texte;boite;-12.5;-6.5;210;216;3.5;23.5;-9.5;213;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+48;Porte extérieure nord - pilier 4 droit;portes;02;40:6-16;texte;boite;6.5;12.5;210;216;3.5;23.5;9.5;213;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+49;Porte extérieure nord - pilier 5 gauche;portes;02;40:6-16;texte;boite;-12.5;-6.5;200;202;3.5;23.5;-9.5;201;13.5;6;2;20;3.15;1.05;10.5;hauteur supposée
+50;Porte extérieure nord - pilier 5 droit;portes;02;40:6-16;texte;boite;6.5;12.5;200;202;3.5;23.5;9.5;201;13.5;6;2;20;3.15;1.05;10.5;hauteur supposée
+51;Porte extérieure nord - jambage entrée gauche;portes;02;40:6-16;deduit;boite;-6.5;-5;244;250;3.5;23.5;-5.75;247;13.5;1.5;6;20;0.788;3.15;10.5;ouverture de 10 (40:11)
+52;Porte extérieure nord - jambage entrée droit;portes;02;40:6-16;deduit;boite;5;6.5;244;250;3.5;23.5;5.75;247;13.5;1.5;6;20;0.788;3.15;10.5;ouverture de 10 (40:11)
+53;Porte extérieure nord - barrière loge 1 gauche;portes;02;40:6-16;deduit;boite;-6.5;-5.5;238;244;3.5;4.5;-6;241;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+54;Porte extérieure nord - barrière loge 1 droite;portes;02;40:6-16;deduit;boite;5.5;6.5;238;244;3.5;4.5;6;241;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+55;Porte extérieure nord - barrière loge 2 gauche;portes;02;40:6-16;deduit;boite;-6.5;-5.5;227;233;3.5;4.5;-6;230;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+56;Porte extérieure nord - barrière loge 2 droite;portes;02;40:6-16;deduit;boite;5.5;6.5;227;233;3.5;4.5;6;230;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+57;Porte extérieure nord - barrière loge 3 gauche;portes;02;40:6-16;deduit;boite;-6.5;-5.5;216;222;3.5;4.5;-6;219;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+58;Porte extérieure nord - barrière loge 3 droite;portes;02;40:6-16;deduit;boite;5.5;6.5;216;222;3.5;4.5;6;219;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+59;Porte extérieure nord - mur latéral gauche;portes;02;40:6-16;hypothese;boite;-14;-12.5;200;250;3.5;23.5;-13.25;225;13.5;1.5;50;20;0.788;26.25;10.5;25 lu de fond de loge à fond de loge
+60;Porte extérieure nord - mur latéral droit;portes;02;40:6-16;hypothese;boite;12.5;14;200;250;3.5;23.5;13.25;225;13.5;1.5;50;20;0.788;26.25;10.5;25 lu de fond de loge à fond de loge
+61;Porte extérieure nord - marche 1;portes;02;40:22, 26;texte;boite;-12.5;12.5;259;260.5;0;0.5;0;259.75;0.25;25;1.5;0.5;13.125;0.788;0.263;nombre de marches du texte, hauteur et giron supposés
+62;Porte extérieure nord - marche 2;portes;02;40:22, 26;texte;boite;-12.5;12.5;257.5;259;0;1;0;258.25;0.5;25;1.5;1;13.125;0.788;0.525;nombre de marches du texte, hauteur et giron supposés
+63;Porte extérieure nord - marche 3;portes;02;40:22, 26;texte;boite;-12.5;12.5;256;257.5;0;1.5;0;256.75;0.75;25;1.5;1.5;13.125;0.788;0.788;nombre de marches du texte, hauteur et giron supposés
+64;Porte extérieure nord - marche 4;portes;02;40:22, 26;texte;boite;-12.5;12.5;254.5;256;0;2;0;255.25;1;25;1.5;2;13.125;0.788;1.05;nombre de marches du texte, hauteur et giron supposés
+65;Porte extérieure nord - marche 5;portes;02;40:22, 26;texte;boite;-12.5;12.5;253;254.5;0;2.5;0;253.75;1.25;25;1.5;2.5;13.125;0.788;1.312;nombre de marches du texte, hauteur et giron supposés
+66;Porte extérieure nord - marche 6;portes;02;40:22, 26;texte;boite;-12.5;12.5;251.5;253;0;3;0;252.25;1.5;25;1.5;3;13.125;0.788;1.575;nombre de marches du texte, hauteur et giron supposés
+67;Porte extérieure nord - marche 7;portes;02;40:22, 26;texte;boite;-12.5;12.5;250;251.5;0;3.5;0;250.75;1.75;25;1.5;3.5;13.125;0.788;1.838;nombre de marches du texte, hauteur et giron supposés
+68;Porte extérieure sud - pilier 1 gauche;portes;02;40:6-16;texte;boite;-12.5;-6.5;-250;-244;3.5;23.5;-9.5;-247;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+69;Porte extérieure sud - pilier 1 droit;portes;02;40:6-16;texte;boite;6.5;12.5;-250;-244;3.5;23.5;9.5;-247;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+70;Porte extérieure sud - pilier 2 gauche;portes;02;40:6-16;texte;boite;-12.5;-6.5;-238;-233;3.5;23.5;-9.5;-235.5;13.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+71;Porte extérieure sud - pilier 2 droit;portes;02;40:6-16;texte;boite;6.5;12.5;-238;-233;3.5;23.5;9.5;-235.5;13.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+72;Porte extérieure sud - pilier 3 gauche;portes;02;40:6-16;texte;boite;-12.5;-6.5;-227;-222;3.5;23.5;-9.5;-224.5;13.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+73;Porte extérieure sud - pilier 3 droit;portes;02;40:6-16;texte;boite;6.5;12.5;-227;-222;3.5;23.5;9.5;-224.5;13.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+74;Porte extérieure sud - pilier 4 gauche;portes;02;40:6-16;texte;boite;-12.5;-6.5;-216;-210;3.5;23.5;-9.5;-213;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+75;Porte extérieure sud - pilier 4 droit;portes;02;40:6-16;texte;boite;6.5;12.5;-216;-210;3.5;23.5;9.5;-213;13.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+76;Porte extérieure sud - pilier 5 gauche;portes;02;40:6-16;texte;boite;-12.5;-6.5;-202;-200;3.5;23.5;-9.5;-201;13.5;6;2;20;3.15;1.05;10.5;hauteur supposée
+77;Porte extérieure sud - pilier 5 droit;portes;02;40:6-16;texte;boite;6.5;12.5;-202;-200;3.5;23.5;9.5;-201;13.5;6;2;20;3.15;1.05;10.5;hauteur supposée
+78;Porte extérieure sud - jambage entrée gauche;portes;02;40:6-16;deduit;boite;-6.5;-5;-250;-244;3.5;23.5;-5.75;-247;13.5;1.5;6;20;0.788;3.15;10.5;ouverture de 10 (40:11)
+79;Porte extérieure sud - jambage entrée droit;portes;02;40:6-16;deduit;boite;5;6.5;-250;-244;3.5;23.5;5.75;-247;13.5;1.5;6;20;0.788;3.15;10.5;ouverture de 10 (40:11)
+80;Porte extérieure sud - barrière loge 1 gauche;portes;02;40:6-16;deduit;boite;-6.5;-5.5;-244;-238;3.5;4.5;-6;-241;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+81;Porte extérieure sud - barrière loge 1 droite;portes;02;40:6-16;deduit;boite;5.5;6.5;-244;-238;3.5;4.5;6;-241;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+82;Porte extérieure sud - barrière loge 2 gauche;portes;02;40:6-16;deduit;boite;-6.5;-5.5;-233;-227;3.5;4.5;-6;-230;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+83;Porte extérieure sud - barrière loge 2 droite;portes;02;40:6-16;deduit;boite;5.5;6.5;-233;-227;3.5;4.5;6;-230;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+84;Porte extérieure sud - barrière loge 3 gauche;portes;02;40:6-16;deduit;boite;-6.5;-5.5;-222;-216;3.5;4.5;-6;-219;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+85;Porte extérieure sud - barrière loge 3 droite;portes;02;40:6-16;deduit;boite;5.5;6.5;-222;-216;3.5;4.5;6;-219;4;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+86;Porte extérieure sud - mur latéral gauche;portes;02;40:6-16;hypothese;boite;-14;-12.5;-250;-200;3.5;23.5;-13.25;-225;13.5;1.5;50;20;0.788;26.25;10.5;25 lu de fond de loge à fond de loge
+87;Porte extérieure sud - mur latéral droit;portes;02;40:6-16;hypothese;boite;12.5;14;-250;-200;3.5;23.5;13.25;-225;13.5;1.5;50;20;0.788;26.25;10.5;25 lu de fond de loge à fond de loge
+88;Porte extérieure sud - marche 1;portes;02;40:22, 26;texte;boite;-12.5;12.5;-260.5;-259;0;0.5;0;-259.75;0.25;25;1.5;0.5;13.125;0.788;0.263;nombre de marches du texte, hauteur et giron supposés
+89;Porte extérieure sud - marche 2;portes;02;40:22, 26;texte;boite;-12.5;12.5;-259;-257.5;0;1;0;-258.25;0.5;25;1.5;1;13.125;0.788;0.525;nombre de marches du texte, hauteur et giron supposés
+90;Porte extérieure sud - marche 3;portes;02;40:22, 26;texte;boite;-12.5;12.5;-257.5;-256;0;1.5;0;-256.75;0.75;25;1.5;1.5;13.125;0.788;0.788;nombre de marches du texte, hauteur et giron supposés
+91;Porte extérieure sud - marche 4;portes;02;40:22, 26;texte;boite;-12.5;12.5;-256;-254.5;0;2;0;-255.25;1;25;1.5;2;13.125;0.788;1.05;nombre de marches du texte, hauteur et giron supposés
+92;Porte extérieure sud - marche 5;portes;02;40:22, 26;texte;boite;-12.5;12.5;-254.5;-253;0;2.5;0;-253.75;1.25;25;1.5;2.5;13.125;0.788;1.312;nombre de marches du texte, hauteur et giron supposés
+93;Porte extérieure sud - marche 6;portes;02;40:22, 26;texte;boite;-12.5;12.5;-253;-251.5;0;3;0;-252.25;1.5;25;1.5;3;13.125;0.788;1.575;nombre de marches du texte, hauteur et giron supposés
+94;Porte extérieure sud - marche 7;portes;02;40:22, 26;texte;boite;-12.5;12.5;-251.5;-250;0;3.5;0;-250.75;1.75;25;1.5;3.5;13.125;0.788;1.838;nombre de marches du texte, hauteur et giron supposés
+95;Porte intérieure est - pilier 1 gauche;portes;05;40:28-37;texte;boite;50;56;6.5;12.5;7.5;27.5;53;9.5;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+96;Porte intérieure est - pilier 1 droit;portes;05;40:28-37;texte;boite;50;56;-12.5;-6.5;7.5;27.5;53;-9.5;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+97;Porte intérieure est - pilier 2 gauche;portes;05;40:28-37;texte;boite;62;67;6.5;12.5;7.5;27.5;64.5;9.5;17.5;5;6;20;2.625;3.15;10.5;hauteur supposée
+98;Porte intérieure est - pilier 2 droit;portes;05;40:28-37;texte;boite;62;67;-12.5;-6.5;7.5;27.5;64.5;-9.5;17.5;5;6;20;2.625;3.15;10.5;hauteur supposée
+99;Porte intérieure est - pilier 3 gauche;portes;05;40:28-37;texte;boite;73;78;6.5;12.5;7.5;27.5;75.5;9.5;17.5;5;6;20;2.625;3.15;10.5;hauteur supposée
+100;Porte intérieure est - pilier 3 droit;portes;05;40:28-37;texte;boite;73;78;-12.5;-6.5;7.5;27.5;75.5;-9.5;17.5;5;6;20;2.625;3.15;10.5;hauteur supposée
+101;Porte intérieure est - pilier 4 gauche;portes;05;40:28-37;texte;boite;84;90;6.5;12.5;7.5;27.5;87;9.5;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+102;Porte intérieure est - pilier 4 droit;portes;05;40:28-37;texte;boite;84;90;-12.5;-6.5;7.5;27.5;87;-9.5;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+103;Porte intérieure est - pilier 5 gauche;portes;05;40:28-37;texte;boite;98;100;6.5;12.5;7.5;27.5;99;9.5;17.5;2;6;20;1.05;3.15;10.5;hauteur supposée
+104;Porte intérieure est - pilier 5 droit;portes;05;40:28-37;texte;boite;98;100;-12.5;-6.5;7.5;27.5;99;-9.5;17.5;2;6;20;1.05;3.15;10.5;hauteur supposée
+105;Porte intérieure est - jambage entrée gauche;portes;05;40:28-37;deduit;boite;50;56;5;6.5;7.5;27.5;53;5.75;17.5;6;1.5;20;3.15;0.788;10.5;ouverture de 10 (40:11)
+106;Porte intérieure est - jambage entrée droit;portes;05;40:28-37;deduit;boite;50;56;-6.5;-5;7.5;27.5;53;-5.75;17.5;6;1.5;20;3.15;0.788;10.5;ouverture de 10 (40:11)
+107;Porte intérieure est - barrière loge 1 gauche;portes;05;40:28-37;deduit;boite;56;62;5.5;6.5;7.5;8.5;59;6;8;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+108;Porte intérieure est - barrière loge 1 droite;portes;05;40:28-37;deduit;boite;56;62;-6.5;-5.5;7.5;8.5;59;-6;8;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+109;Porte intérieure est - barrière loge 2 gauche;portes;05;40:28-37;deduit;boite;67;73;5.5;6.5;7.5;8.5;70;6;8;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+110;Porte intérieure est - barrière loge 2 droite;portes;05;40:28-37;deduit;boite;67;73;-6.5;-5.5;7.5;8.5;70;-6;8;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+111;Porte intérieure est - barrière loge 3 gauche;portes;05;40:28-37;deduit;boite;78;84;5.5;6.5;7.5;8.5;81;6;8;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+112;Porte intérieure est - barrière loge 3 droite;portes;05;40:28-37;deduit;boite;78;84;-6.5;-5.5;7.5;8.5;81;-6;8;6;1;1;3.15;0.525;0.525;1 coudée (40:12), hauteur supposée
+113;Porte intérieure est - mur latéral gauche;portes;05;40:28-37;hypothese;boite;50;100;12.5;14;7.5;27.5;75;13.25;17.5;50;1.5;20;26.25;0.788;10.5;25 lu de fond de loge à fond de loge
+114;Porte intérieure est - mur latéral droit;portes;05;40:28-37;hypothese;boite;50;100;-14;-12.5;7.5;27.5;75;-13.25;17.5;50;1.5;20;26.25;0.788;10.5;25 lu de fond de loge à fond de loge
+115;Porte intérieure est - sol de la porte;portes;05;40:28-37;hypothese;boite;50;100;-14;14;3.5;7.5;75;0;5.5;50;28;4;26.25;14.7;2.1;
+116;Porte intérieure est - marche 1;portes;05;40:31, 34, 37;texte;boite;110.5;112;-12.5;12.5;3.5;4;111.25;0;3.75;1.5;25;0.5;0.788;13.125;0.263;nombre de marches du texte, hauteur et giron supposés
+117;Porte intérieure est - marche 2;portes;05;40:31, 34, 37;texte;boite;109;110.5;-12.5;12.5;3.5;4.5;109.75;0;4;1.5;25;1;0.788;13.125;0.525;nombre de marches du texte, hauteur et giron supposés
+118;Porte intérieure est - marche 3;portes;05;40:31, 34, 37;texte;boite;107.5;109;-12.5;12.5;3.5;5;108.25;0;4.25;1.5;25;1.5;0.788;13.125;0.788;nombre de marches du texte, hauteur et giron supposés
+119;Porte intérieure est - marche 4;portes;05;40:31, 34, 37;texte;boite;106;107.5;-12.5;12.5;3.5;5.5;106.75;0;4.5;1.5;25;2;0.788;13.125;1.05;nombre de marches du texte, hauteur et giron supposés
+120;Porte intérieure est - marche 5;portes;05;40:31, 34, 37;texte;boite;104.5;106;-12.5;12.5;3.5;6;105.25;0;4.75;1.5;25;2.5;0.788;13.125;1.312;nombre de marches du texte, hauteur et giron supposés
+121;Porte intérieure est - marche 6;portes;05;40:31, 34, 37;texte;boite;103;104.5;-12.5;12.5;3.5;6.5;103.75;0;5;1.5;25;3;0.788;13.125;1.575;nombre de marches du texte, hauteur et giron supposés
+122;Porte intérieure est - marche 7;portes;05;40:31, 34, 37;texte;boite;101.5;103;-12.5;12.5;3.5;7;102.25;0;5.25;1.5;25;3.5;0.788;13.125;1.838;nombre de marches du texte, hauteur et giron supposés
+123;Porte intérieure est - marche 8;portes;05;40:31, 34, 37;texte;boite;100;101.5;-12.5;12.5;3.5;7.5;100.75;0;5.5;1.5;25;4;0.788;13.125;2.1;nombre de marches du texte, hauteur et giron supposés
+124;Porte intérieure nord - pilier 1 gauche;portes;05;40:28-37;texte;boite;-12.5;-6.5;50;56;7.5;27.5;-9.5;53;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+125;Porte intérieure nord - pilier 1 droit;portes;05;40:28-37;texte;boite;6.5;12.5;50;56;7.5;27.5;9.5;53;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+126;Porte intérieure nord - pilier 2 gauche;portes;05;40:28-37;texte;boite;-12.5;-6.5;62;67;7.5;27.5;-9.5;64.5;17.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+127;Porte intérieure nord - pilier 2 droit;portes;05;40:28-37;texte;boite;6.5;12.5;62;67;7.5;27.5;9.5;64.5;17.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+128;Porte intérieure nord - pilier 3 gauche;portes;05;40:28-37;texte;boite;-12.5;-6.5;73;78;7.5;27.5;-9.5;75.5;17.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+129;Porte intérieure nord - pilier 3 droit;portes;05;40:28-37;texte;boite;6.5;12.5;73;78;7.5;27.5;9.5;75.5;17.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+130;Porte intérieure nord - pilier 4 gauche;portes;05;40:28-37;texte;boite;-12.5;-6.5;84;90;7.5;27.5;-9.5;87;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+131;Porte intérieure nord - pilier 4 droit;portes;05;40:28-37;texte;boite;6.5;12.5;84;90;7.5;27.5;9.5;87;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+132;Porte intérieure nord - pilier 5 gauche;portes;05;40:28-37;texte;boite;-12.5;-6.5;98;100;7.5;27.5;-9.5;99;17.5;6;2;20;3.15;1.05;10.5;hauteur supposée
+133;Porte intérieure nord - pilier 5 droit;portes;05;40:28-37;texte;boite;6.5;12.5;98;100;7.5;27.5;9.5;99;17.5;6;2;20;3.15;1.05;10.5;hauteur supposée
+134;Porte intérieure nord - jambage entrée gauche;portes;05;40:28-37;deduit;boite;-6.5;-5;50;56;7.5;27.5;-5.75;53;17.5;1.5;6;20;0.788;3.15;10.5;ouverture de 10 (40:11)
+135;Porte intérieure nord - jambage entrée droit;portes;05;40:28-37;deduit;boite;5;6.5;50;56;7.5;27.5;5.75;53;17.5;1.5;6;20;0.788;3.15;10.5;ouverture de 10 (40:11)
+136;Porte intérieure nord - barrière loge 1 gauche;portes;05;40:28-37;deduit;boite;-6.5;-5.5;56;62;7.5;8.5;-6;59;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+137;Porte intérieure nord - barrière loge 1 droite;portes;05;40:28-37;deduit;boite;5.5;6.5;56;62;7.5;8.5;6;59;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+138;Porte intérieure nord - barrière loge 2 gauche;portes;05;40:28-37;deduit;boite;-6.5;-5.5;67;73;7.5;8.5;-6;70;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+139;Porte intérieure nord - barrière loge 2 droite;portes;05;40:28-37;deduit;boite;5.5;6.5;67;73;7.5;8.5;6;70;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+140;Porte intérieure nord - barrière loge 3 gauche;portes;05;40:28-37;deduit;boite;-6.5;-5.5;78;84;7.5;8.5;-6;81;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+141;Porte intérieure nord - barrière loge 3 droite;portes;05;40:28-37;deduit;boite;5.5;6.5;78;84;7.5;8.5;6;81;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+142;Porte intérieure nord - mur latéral gauche;portes;05;40:28-37;hypothese;boite;-14;-12.5;50;100;7.5;27.5;-13.25;75;17.5;1.5;50;20;0.788;26.25;10.5;25 lu de fond de loge à fond de loge
+143;Porte intérieure nord - mur latéral droit;portes;05;40:28-37;hypothese;boite;12.5;14;50;100;7.5;27.5;13.25;75;17.5;1.5;50;20;0.788;26.25;10.5;25 lu de fond de loge à fond de loge
+144;Porte intérieure nord - sol de la porte;portes;05;40:28-37;hypothese;boite;-14;14;50;100;3.5;7.5;0;75;5.5;28;50;4;14.7;26.25;2.1;
+145;Porte intérieure nord - marche 1;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;110.5;112;3.5;4;0;111.25;3.75;25;1.5;0.5;13.125;0.788;0.263;nombre de marches du texte, hauteur et giron supposés
+146;Porte intérieure nord - marche 2;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;109;110.5;3.5;4.5;0;109.75;4;25;1.5;1;13.125;0.788;0.525;nombre de marches du texte, hauteur et giron supposés
+147;Porte intérieure nord - marche 3;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;107.5;109;3.5;5;0;108.25;4.25;25;1.5;1.5;13.125;0.788;0.788;nombre de marches du texte, hauteur et giron supposés
+148;Porte intérieure nord - marche 4;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;106;107.5;3.5;5.5;0;106.75;4.5;25;1.5;2;13.125;0.788;1.05;nombre de marches du texte, hauteur et giron supposés
+149;Porte intérieure nord - marche 5;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;104.5;106;3.5;6;0;105.25;4.75;25;1.5;2.5;13.125;0.788;1.312;nombre de marches du texte, hauteur et giron supposés
+150;Porte intérieure nord - marche 6;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;103;104.5;3.5;6.5;0;103.75;5;25;1.5;3;13.125;0.788;1.575;nombre de marches du texte, hauteur et giron supposés
+151;Porte intérieure nord - marche 7;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;101.5;103;3.5;7;0;102.25;5.25;25;1.5;3.5;13.125;0.788;1.838;nombre de marches du texte, hauteur et giron supposés
+152;Porte intérieure nord - marche 8;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;100;101.5;3.5;7.5;0;100.75;5.5;25;1.5;4;13.125;0.788;2.1;nombre de marches du texte, hauteur et giron supposés
+153;Porte intérieure sud - pilier 1 gauche;portes;05;40:28-37;texte;boite;-12.5;-6.5;-56;-50;7.5;27.5;-9.5;-53;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+154;Porte intérieure sud - pilier 1 droit;portes;05;40:28-37;texte;boite;6.5;12.5;-56;-50;7.5;27.5;9.5;-53;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+155;Porte intérieure sud - pilier 2 gauche;portes;05;40:28-37;texte;boite;-12.5;-6.5;-67;-62;7.5;27.5;-9.5;-64.5;17.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+156;Porte intérieure sud - pilier 2 droit;portes;05;40:28-37;texte;boite;6.5;12.5;-67;-62;7.5;27.5;9.5;-64.5;17.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+157;Porte intérieure sud - pilier 3 gauche;portes;05;40:28-37;texte;boite;-12.5;-6.5;-78;-73;7.5;27.5;-9.5;-75.5;17.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+158;Porte intérieure sud - pilier 3 droit;portes;05;40:28-37;texte;boite;6.5;12.5;-78;-73;7.5;27.5;9.5;-75.5;17.5;6;5;20;3.15;2.625;10.5;hauteur supposée
+159;Porte intérieure sud - pilier 4 gauche;portes;05;40:28-37;texte;boite;-12.5;-6.5;-90;-84;7.5;27.5;-9.5;-87;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+160;Porte intérieure sud - pilier 4 droit;portes;05;40:28-37;texte;boite;6.5;12.5;-90;-84;7.5;27.5;9.5;-87;17.5;6;6;20;3.15;3.15;10.5;hauteur supposée
+161;Porte intérieure sud - pilier 5 gauche;portes;05;40:28-37;texte;boite;-12.5;-6.5;-100;-98;7.5;27.5;-9.5;-99;17.5;6;2;20;3.15;1.05;10.5;hauteur supposée
+162;Porte intérieure sud - pilier 5 droit;portes;05;40:28-37;texte;boite;6.5;12.5;-100;-98;7.5;27.5;9.5;-99;17.5;6;2;20;3.15;1.05;10.5;hauteur supposée
+163;Porte intérieure sud - jambage entrée gauche;portes;05;40:28-37;deduit;boite;-6.5;-5;-56;-50;7.5;27.5;-5.75;-53;17.5;1.5;6;20;0.788;3.15;10.5;ouverture de 10 (40:11)
+164;Porte intérieure sud - jambage entrée droit;portes;05;40:28-37;deduit;boite;5;6.5;-56;-50;7.5;27.5;5.75;-53;17.5;1.5;6;20;0.788;3.15;10.5;ouverture de 10 (40:11)
+165;Porte intérieure sud - barrière loge 1 gauche;portes;05;40:28-37;deduit;boite;-6.5;-5.5;-62;-56;7.5;8.5;-6;-59;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+166;Porte intérieure sud - barrière loge 1 droite;portes;05;40:28-37;deduit;boite;5.5;6.5;-62;-56;7.5;8.5;6;-59;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+167;Porte intérieure sud - barrière loge 2 gauche;portes;05;40:28-37;deduit;boite;-6.5;-5.5;-73;-67;7.5;8.5;-6;-70;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+168;Porte intérieure sud - barrière loge 2 droite;portes;05;40:28-37;deduit;boite;5.5;6.5;-73;-67;7.5;8.5;6;-70;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+169;Porte intérieure sud - barrière loge 3 gauche;portes;05;40:28-37;deduit;boite;-6.5;-5.5;-84;-78;7.5;8.5;-6;-81;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+170;Porte intérieure sud - barrière loge 3 droite;portes;05;40:28-37;deduit;boite;5.5;6.5;-84;-78;7.5;8.5;6;-81;8;1;6;1;0.525;3.15;0.525;1 coudée (40:12), hauteur supposée
+171;Porte intérieure sud - mur latéral gauche;portes;05;40:28-37;hypothese;boite;-14;-12.5;-100;-50;7.5;27.5;-13.25;-75;17.5;1.5;50;20;0.788;26.25;10.5;25 lu de fond de loge à fond de loge
+172;Porte intérieure sud - mur latéral droit;portes;05;40:28-37;hypothese;boite;12.5;14;-100;-50;7.5;27.5;13.25;-75;17.5;1.5;50;20;0.788;26.25;10.5;25 lu de fond de loge à fond de loge
+173;Porte intérieure sud - sol de la porte;portes;05;40:28-37;hypothese;boite;-14;14;-100;-50;3.5;7.5;0;-75;5.5;28;50;4;14.7;26.25;2.1;
+174;Porte intérieure sud - marche 1;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;-112;-110.5;3.5;4;0;-111.25;3.75;25;1.5;0.5;13.125;0.788;0.263;nombre de marches du texte, hauteur et giron supposés
+175;Porte intérieure sud - marche 2;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;-110.5;-109;3.5;4.5;0;-109.75;4;25;1.5;1;13.125;0.788;0.525;nombre de marches du texte, hauteur et giron supposés
+176;Porte intérieure sud - marche 3;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;-109;-107.5;3.5;5;0;-108.25;4.25;25;1.5;1.5;13.125;0.788;0.788;nombre de marches du texte, hauteur et giron supposés
+177;Porte intérieure sud - marche 4;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;-107.5;-106;3.5;5.5;0;-106.75;4.5;25;1.5;2;13.125;0.788;1.05;nombre de marches du texte, hauteur et giron supposés
+178;Porte intérieure sud - marche 5;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;-106;-104.5;3.5;6;0;-105.25;4.75;25;1.5;2.5;13.125;0.788;1.312;nombre de marches du texte, hauteur et giron supposés
+179;Porte intérieure sud - marche 6;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;-104.5;-103;3.5;6.5;0;-103.75;5;25;1.5;3;13.125;0.788;1.575;nombre de marches du texte, hauteur et giron supposés
+180;Porte intérieure sud - marche 7;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;-103;-101.5;3.5;7;0;-102.25;5.25;25;1.5;3.5;13.125;0.788;1.838;nombre de marches du texte, hauteur et giron supposés
+181;Porte intérieure sud - marche 8;portes;05;40:31, 34, 37;texte;boite;-12.5;12.5;-101.5;-100;3.5;7.5;0;-100.75;5.5;25;1.5;4;13.125;0.788;2.1;nombre de marches du texte, hauteur et giron supposés
+182;Chambre du parvis N1;parvis;04;40:17;hypothese;boite;-194;-168;228;242;3.5;13.5;-181;235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+183;Chambre du parvis S1;parvis;04;40:17;hypothese;boite;-194;-168;-242;-228;3.5;13.5;-181;-235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+184;Chambre du parvis E1;parvis;04;40:17;hypothese;boite;228;242;168;194;3.5;13.5;235;181;8.5;14;26;10;7.35;13.65;5.25;"nombre (30) du texte ; taille et place supposées"
+185;Chambre du parvis N2;parvis;04;40:17;hypothese;boite;-160;-134;228;242;3.5;13.5;-147;235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+186;Chambre du parvis S2;parvis;04;40:17;hypothese;boite;-160;-134;-242;-228;3.5;13.5;-147;-235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+187;Chambre du parvis E2;parvis;04;40:17;hypothese;boite;228;242;134;160;3.5;13.5;235;147;8.5;14;26;10;7.35;13.65;5.25;"nombre (30) du texte ; taille et place supposées"
+188;Chambre du parvis N3;parvis;04;40:17;hypothese;boite;-126;-100;228;242;3.5;13.5;-113;235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+189;Chambre du parvis S3;parvis;04;40:17;hypothese;boite;-126;-100;-242;-228;3.5;13.5;-113;-235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+190;Chambre du parvis E3;parvis;04;40:17;hypothese;boite;228;242;100;126;3.5;13.5;235;113;8.5;14;26;10;7.35;13.65;5.25;"nombre (30) du texte ; taille et place supposées"
+191;Chambre du parvis N4;parvis;04;40:17;hypothese;boite;-92;-66;228;242;3.5;13.5;-79;235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+192;Chambre du parvis S4;parvis;04;40:17;hypothese;boite;-92;-66;-242;-228;3.5;13.5;-79;-235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+193;Chambre du parvis E4;parvis;04;40:17;hypothese;boite;228;242;66;92;3.5;13.5;235;79;8.5;14;26;10;7.35;13.65;5.25;"nombre (30) du texte ; taille et place supposées"
+194;Chambre du parvis N5;parvis;04;40:17;hypothese;boite;-58;-32;228;242;3.5;13.5;-45;235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+195;Chambre du parvis S5;parvis;04;40:17;hypothese;boite;-58;-32;-242;-228;3.5;13.5;-45;-235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+196;Chambre du parvis E5;parvis;04;40:17;hypothese;boite;228;242;32;58;3.5;13.5;235;45;8.5;14;26;10;7.35;13.65;5.25;"nombre (30) du texte ; taille et place supposées"
+197;Chambre du parvis N6;parvis;04;40:17;hypothese;boite;24;50;228;242;3.5;13.5;37;235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+198;Chambre du parvis S6;parvis;04;40:17;hypothese;boite;24;50;-242;-228;3.5;13.5;37;-235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+199;Chambre du parvis E6;parvis;04;40:17;hypothese;boite;228;242;-50;-24;3.5;13.5;235;-37;8.5;14;26;10;7.35;13.65;5.25;"nombre (30) du texte ; taille et place supposées"
+200;Chambre du parvis N7;parvis;04;40:17;hypothese;boite;58;84;228;242;3.5;13.5;71;235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+201;Chambre du parvis S7;parvis;04;40:17;hypothese;boite;58;84;-242;-228;3.5;13.5;71;-235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+202;Chambre du parvis E7;parvis;04;40:17;hypothese;boite;228;242;-84;-58;3.5;13.5;235;-71;8.5;14;26;10;7.35;13.65;5.25;"nombre (30) du texte ; taille et place supposées"
+203;Chambre du parvis N8;parvis;04;40:17;hypothese;boite;92;118;228;242;3.5;13.5;105;235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+204;Chambre du parvis S8;parvis;04;40:17;hypothese;boite;92;118;-242;-228;3.5;13.5;105;-235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+205;Chambre du parvis E8;parvis;04;40:17;hypothese;boite;228;242;-118;-92;3.5;13.5;235;-105;8.5;14;26;10;7.35;13.65;5.25;"nombre (30) du texte ; taille et place supposées"
+206;Chambre du parvis N9;parvis;04;40:17;hypothese;boite;126;152;228;242;3.5;13.5;139;235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+207;Chambre du parvis S9;parvis;04;40:17;hypothese;boite;126;152;-242;-228;3.5;13.5;139;-235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+208;Chambre du parvis E9;parvis;04;40:17;hypothese;boite;228;242;-152;-126;3.5;13.5;235;-139;8.5;14;26;10;7.35;13.65;5.25;"nombre (30) du texte ; taille et place supposées"
+209;Chambre du parvis N10;parvis;04;40:17;hypothese;boite;160;186;228;242;3.5;13.5;173;235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+210;Chambre du parvis S10;parvis;04;40:17;hypothese;boite;160;186;-242;-228;3.5;13.5;173;-235;8.5;26;14;10;13.65;7.35;5.25;"nombre (30) du texte ; taille et place supposées"
+211;Chambre du parvis E10;parvis;04;40:17;hypothese;boite;228;242;-186;-160;3.5;13.5;235;-173;8.5;14;26;10;7.35;13.65;5.25;"nombre (30) du texte ; taille et place supposées"
+212;Cuisine NO - muret nord;parvis;04;46:21-24;texte;boite;-244;-204;243;244;3.5;7.5;-224;243.5;5.5;40;1;4;21;0.525;2.1;hauteur et épaisseur du muret supposées
+213;Cuisine NO - muret sud;parvis;04;46:21-24;texte;boite;-244;-204;214;215;3.5;7.5;-224;214.5;5.5;40;1;4;21;0.525;2.1;hauteur et épaisseur du muret supposées
+214;Cuisine NO - muret ouest;parvis;04;46:21-24;texte;boite;-244;-243;215;243;3.5;7.5;-243.5;229;5.5;1;28;4;0.525;14.7;2.1;hauteur et épaisseur du muret supposées
+215;Cuisine NO - muret est;parvis;04;46:21-24;texte;boite;-205;-204;215;243;3.5;7.5;-204.5;229;5.5;1;28;4;0.525;14.7;2.1;hauteur et épaisseur du muret supposées
+216;Cuisine NE - muret nord;parvis;04;46:21-24;texte;boite;204;244;243;244;3.5;7.5;224;243.5;5.5;40;1;4;21;0.525;2.1;hauteur et épaisseur du muret supposées
+217;Cuisine NE - muret sud;parvis;04;46:21-24;texte;boite;204;244;214;215;3.5;7.5;224;214.5;5.5;40;1;4;21;0.525;2.1;hauteur et épaisseur du muret supposées
+218;Cuisine NE - muret ouest;parvis;04;46:21-24;texte;boite;204;205;215;243;3.5;7.5;204.5;229;5.5;1;28;4;0.525;14.7;2.1;hauteur et épaisseur du muret supposées
+219;Cuisine NE - muret est;parvis;04;46:21-24;texte;boite;243;244;215;243;3.5;7.5;243.5;229;5.5;1;28;4;0.525;14.7;2.1;hauteur et épaisseur du muret supposées
+220;Cuisine SO - muret nord;parvis;04;46:21-24;texte;boite;-244;-204;-215;-214;3.5;7.5;-224;-214.5;5.5;40;1;4;21;0.525;2.1;hauteur et épaisseur du muret supposées
+221;Cuisine SO - muret sud;parvis;04;46:21-24;texte;boite;-244;-204;-244;-243;3.5;7.5;-224;-243.5;5.5;40;1;4;21;0.525;2.1;hauteur et épaisseur du muret supposées
+222;Cuisine SO - muret ouest;parvis;04;46:21-24;texte;boite;-244;-243;-243;-215;3.5;7.5;-243.5;-229;5.5;1;28;4;0.525;14.7;2.1;hauteur et épaisseur du muret supposées
+223;Cuisine SO - muret est;parvis;04;46:21-24;texte;boite;-205;-204;-243;-215;3.5;7.5;-204.5;-229;5.5;1;28;4;0.525;14.7;2.1;hauteur et épaisseur du muret supposées
+224;Cuisine SE - muret nord;parvis;04;46:21-24;texte;boite;204;244;-215;-214;3.5;7.5;224;-214.5;5.5;40;1;4;21;0.525;2.1;hauteur et épaisseur du muret supposées
+225;Cuisine SE - muret sud;parvis;04;46:21-24;texte;boite;204;244;-244;-243;3.5;7.5;224;-243.5;5.5;40;1;4;21;0.525;2.1;hauteur et épaisseur du muret supposées
+226;Cuisine SE - muret ouest;parvis;04;46:21-24;texte;boite;204;205;-243;-215;3.5;7.5;204.5;-229;5.5;1;28;4;0.525;14.7;2.1;hauteur et épaisseur du muret supposées
+227;Cuisine SE - muret est;parvis;04;46:21-24;texte;boite;243;244;-243;-215;3.5;7.5;243.5;-229;5.5;1;28;4;0.525;14.7;2.1;hauteur et épaisseur du muret supposées
+228;Chambre des prêtres de la Maison (vers le sud);parvis;06;40:44-45;hypothese;boite;16;38;39;47;7.5;17.5;27;43;12.5;22;8;10;11.55;4.2;5.25;
+229;Chambre des prêtres de l'autel (vers le nord);parvis;06;40:44, 46;hypothese;boite;16;38;-47;-39;7.5;17.5;27;-43;12.5;22;8;10;11.55;4.2;5.25;
+230;Autel - base 18 x 18;autel;12;43:13-17;texte;boite;-9;9;-9;9;7.5;8.5;0;0;8;18;18;1;9.45;9.45;0.525;
+231;Autel - palier 16 x 16;autel;12;43:13-17;texte;boite;-8;8;-8;8;8.5;10.5;0;0;9.5;16;16;2;8.4;8.4;1.05;
+232;Autel - palier 14 x 14;autel;12;43:13-17;texte;boite;-7;7;-7;7;10.5;14.5;0;0;12.5;14;14;4;7.35;7.35;2.1;
+233;Autel - foyer 12 x 12;autel;12;43:13-17;texte;boite;-6;6;-6;6;14.5;18.5;0;0;16.5;12;12;4;6.3;6.3;2.1;
+234;Autel - corne 1;autel;12;43:15;hypothese;boite;-6;-5;5;6;18.5;19.5;-5.5;5.5;19;1;1;1;0.525;0.525;0.525;cornes du texte, taille supposée
+235;Autel - corne 2;autel;12;43:15;hypothese;boite;5;6;5;6;18.5;19.5;5.5;5.5;19;1;1;1;0.525;0.525;0.525;cornes du texte, taille supposée
+236;Autel - corne 3;autel;12;43:15;hypothese;boite;-6;-5;-6;-5;18.5;19.5;-5.5;-5.5;19;1;1;1;0.525;0.525;0.525;cornes du texte, taille supposée
+237;Autel - corne 4;autel;12;43:15;hypothese;boite;5;6;-6;-5;18.5;19.5;5.5;-5.5;19;1;1;1;0.525;0.525;0.525;cornes du texte, taille supposée
+238;Temple - plate-forme;temple;08;41:8, 41:11;texte;boite;-155;-67;-30;30;7.5;13.5;-111;0;10.5;88;60;6;46.2;31.5;3.15;1 roseau de haut, déborde de l'espace libre de 5
+239;Temple - plate-forme du vestibule;temple;08;41:8;deduit;boite;-67;-50;-16;16;7.5;13.5;-58.5;0;10.5;17;32;6;8.925;16.8;3.15;
+240;Temple - marche 1;temple;07;40:49 (LXX);hypothese;boite;-45.5;-45;-7;7;7.5;8.1;-45.25;0;7.8;0.5;14;0.6;0.263;7.35;0.315;10 marches (LXX) pour 6 coudées : hauteur 0,6
+241;Temple - marche 2;temple;07;40:49 (LXX);hypothese;boite;-46;-45.5;-7;7;7.5;8.7;-45.75;0;8.1;0.5;14;1.2;0.263;7.35;0.63;10 marches (LXX) pour 6 coudées : hauteur 0,6
+242;Temple - marche 3;temple;07;40:49 (LXX);hypothese;boite;-46.5;-46;-7;7;7.5;9.3;-46.25;0;8.4;0.5;14;1.8;0.263;7.35;0.945;10 marches (LXX) pour 6 coudées : hauteur 0,6
+243;Temple - marche 4;temple;07;40:49 (LXX);hypothese;boite;-47;-46.5;-7;7;7.5;9.9;-46.75;0;8.7;0.5;14;2.4;0.263;7.35;1.26;10 marches (LXX) pour 6 coudées : hauteur 0,6
+244;Temple - marche 5;temple;07;40:49 (LXX);hypothese;boite;-47.5;-47;-7;7;7.5;10.5;-47.25;0;9;0.5;14;3;0.263;7.35;1.575;10 marches (LXX) pour 6 coudées : hauteur 0,6
+245;Temple - marche 6;temple;07;40:49 (LXX);hypothese;boite;-48;-47.5;-7;7;7.5;11.1;-47.75;0;9.3;0.5;14;3.6;0.263;7.35;1.89;10 marches (LXX) pour 6 coudées : hauteur 0,6
+246;Temple - marche 7;temple;07;40:49 (LXX);hypothese;boite;-48.5;-48;-7;7;7.5;11.7;-48.25;0;9.6;0.5;14;4.2;0.263;7.35;2.205;10 marches (LXX) pour 6 coudées : hauteur 0,6
+247;Temple - marche 8;temple;07;40:49 (LXX);hypothese;boite;-49;-48.5;-7;7;7.5;12.3;-48.75;0;9.9;0.5;14;4.8;0.263;7.35;2.52;10 marches (LXX) pour 6 coudées : hauteur 0,6
+248;Temple - marche 9;temple;07;40:49 (LXX);hypothese;boite;-49.5;-49;-7;7;7.5;12.9;-49.25;0;10.2;0.5;14;5.4;0.263;7.35;2.835;10 marches (LXX) pour 6 coudées : hauteur 0,6
+249;Temple - marche 10;temple;07;40:49 (LXX);hypothese;boite;-50;-49.5;-7;7;7.5;13.5;-49.75;0;10.5;0.5;14;6;0.263;7.35;3.15;10 marches (LXX) pour 6 coudées : hauteur 0,6
+250;Temple - mur extérieur des chambres nord;temple;07;41:9;texte;boite;-150;-67;20;25;13.5;28.5;-108.5;22.5;21;83;5;15;43.575;2.625;7.875;hauteur supposée
+251;Temple - mur extérieur des chambres sud;temple;07;41:9;texte;boite;-150;-67;-25;-20;13.5;28.5;-108.5;-22.5;21;83;5;15;43.575;2.625;7.875;hauteur supposée
+252;Temple - mur extérieur des chambres ouest;temple;07;41:9;texte;boite;-150;-145;-20;20;13.5;28.5;-147.5;0;21;5;40;15;2.625;21;7.875;hauteur supposée
+253;Temple - mur nord niveau 1;temple;08;41:5-7;deduit;boite;-141;-67;10;16;13.5;18.5;-104;13;16;74;6;5;38.85;3.15;2.625;retraits de 1 coudée par étage (41:6-7, 1 R 6:6)
+254;Temple - mur sud niveau 1;temple;08;41:5-7;deduit;boite;-141;-67;-16;-10;13.5;18.5;-104;-13;16;74;6;5;38.85;3.15;2.625;retraits de 1 coudée par étage (41:6-7, 1 R 6:6)
+255;Temple - mur ouest niveau 1;temple;08;41:5-7;deduit;boite;-141;-135;-16;16;13.5;18.5;-138;0;16;6;32;5;3.15;16.8;2.625;retraits de 1 coudée par étage (41:6-7, 1 R 6:6)
+256;Temple - mur nord niveau 2;temple;08;41:5-7;deduit;boite;-141;-67;10;15;18.5;23.5;-104;12.5;21;74;5;5;38.85;2.625;2.625;retraits de 1 coudée par étage (41:6-7, 1 R 6:6)
+257;Temple - mur sud niveau 2;temple;08;41:5-7;deduit;boite;-141;-67;-15;-10;18.5;23.5;-104;-12.5;21;74;5;5;38.85;2.625;2.625;retraits de 1 coudée par étage (41:6-7, 1 R 6:6)
+258;Temple - mur ouest niveau 2;temple;08;41:5-7;deduit;boite;-140;-135;-15;15;18.5;23.5;-137.5;0;21;5;30;5;2.625;15.75;2.625;retraits de 1 coudée par étage (41:6-7, 1 R 6:6)
+259;Temple - mur nord niveau 3;temple;08;41:5-7;deduit;boite;-141;-67;10;14;23.5;43.5;-104;12;33.5;74;4;20;38.85;2.1;10.5;retraits de 1 coudée par étage (41:6-7, 1 R 6:6)
+260;Temple - mur sud niveau 3;temple;08;41:5-7;deduit;boite;-141;-67;-14;-10;23.5;43.5;-104;-12;33.5;74;4;20;38.85;2.1;10.5;retraits de 1 coudée par étage (41:6-7, 1 R 6:6)
+261;Temple - mur ouest niveau 3;temple;08;41:5-7;deduit;boite;-139;-135;-14;14;23.5;43.5;-137;0;33.5;4;28;20;2.1;14.7;10.5;retraits de 1 coudée par étage (41:6-7, 1 R 6:6)
+262;Temple - plancher étage 2 nord;temple;08;41:6;hypothese;boite;-145;-67;15;20;18.5;19;-106;17.5;18.75;78;5;0.5;40.95;2.625;0.263;
+263;Temple - plancher étage 2 sud;temple;08;41:6;hypothese;boite;-145;-67;-20;-15;18.5;19;-106;-17.5;18.75;78;5;0.5;40.95;2.625;0.263;
+264;Temple - plancher étage 2 ouest;temple;08;41:6;hypothese;boite;-145;-140;-20;20;18.5;19;-142.5;0;18.75;5;40;0.5;2.625;21;0.263;
+265;Temple - plancher étage 3 nord;temple;08;41:6;hypothese;boite;-145;-67;14;20;23.5;24;-106;17;23.75;78;6;0.5;40.95;3.15;0.263;
+266;Temple - plancher étage 3 sud;temple;08;41:6;hypothese;boite;-145;-67;-20;-14;23.5;24;-106;-17;23.75;78;6;0.5;40.95;3.15;0.263;
+267;Temple - plancher étage 3 ouest;temple;08;41:6;hypothese;boite;-145;-139;-20;20;23.5;24;-142;0;23.75;6;40;0.5;3.15;21;0.263;
+268;Temple - toit des chambres nord;temple;08;41:6;hypothese;boite;-150;-67;14;25;28.5;29;-108.5;19.5;28.75;83;11;0.5;43.575;5.775;0.263;
+269;Temple - toit des chambres sud;temple;08;41:6;hypothese;boite;-150;-67;-25;-14;28.5;29;-108.5;-19.5;28.75;83;11;0.5;43.575;5.775;0.263;
+270;Temple - toit des chambres ouest;temple;08;41:6;hypothese;boite;-150;-139;-25;25;28.5;29;-144.5;0;28.75;11;50;0.5;5.775;26.25;0.263;
+271;Temple - pilier de la nef nord;temple;07;41:1-2;texte;boite;-73;-67;5;10;13.5;43.5;-70;7.5;28.5;6;5;30;3.15;2.625;15.75;
+272;Temple - pilier de la nef sud;temple;07;41:1-2;texte;boite;-73;-67;-10;-5;13.5;43.5;-70;-7.5;28.5;6;5;30;3.15;2.625;15.75;
+273;Temple - cloison du Saint des saints nord;temple;07;41:3;texte;boite;-115;-113;3;10;13.5;43.5;-114;6.5;28.5;2;7;30;1.05;3.675;15.75;
+274;Temple - cloison du Saint des saints sud;temple;07;41:3;texte;boite;-115;-113;-10;-3;13.5;43.5;-114;-6.5;28.5;2;7;30;1.05;3.675;15.75;
+275;Temple - mur du vestibule nord;temple;07;40:48-49;deduit;boite;-67;-50;10;16;13.5;43.5;-58.5;13;28.5;17;6;30;8.925;3.15;15.75;
+276;Temple - mur du vestibule sud;temple;07;40:48-49;deduit;boite;-67;-50;-16;-10;13.5;43.5;-58.5;-13;28.5;17;6;30;8.925;3.15;15.75;
+277;Temple - pilier du vestibule nord;temple;07;40:48 (LXX);texte;boite;-55;-50;7;10;13.5;43.5;-52.5;8.5;28.5;5;3;30;2.625;1.575;15.75;
+278;Temple - pilier du vestibule sud;temple;07;40:48 (LXX);texte;boite;-55;-50;-10;-7;13.5;43.5;-52.5;-8.5;28.5;5;3;30;2.625;1.575;15.75;
+279;Temple - colonne nord;temple;07;40:49;hypothese;cylindre;-49.2;-46.8;7.8;10.2;13.5;33.5;-48;9;23.5;2.4;2.4;20;1.26;1.26;10.5;colonnes du texte, diamètre et hauteur supposés
+280;Temple - colonne sud;temple;07;40:49;hypothese;cylindre;-49.2;-46.8;-10.2;-7.8;13.5;33.5;-48;-9;23.5;2.4;2.4;20;1.26;1.26;10.5;colonnes du texte, diamètre et hauteur supposés
+281;Temple - toit;temple;08;-;hypothese;boite;-141;-50;-16;16;43.5;44.5;-95.5;0;44;91;32;1;47.775;16.8;0.525;toit plat supposé
+282;Bâtiment ouest - mur nord;batiment;10;41:12;texte;boite;-250;-170;45;50;3.5;23.5;-210;47.5;13.5;80;5;20;42;2.625;10.5;hauteur supposée
+283;Bâtiment ouest - mur sud;batiment;10;41:12;texte;boite;-250;-170;-50;-45;3.5;23.5;-210;-47.5;13.5;80;5;20;42;2.625;10.5;hauteur supposée
+284;Bâtiment ouest - mur ouest;batiment;10;41:12;texte;boite;-250;-245;-45;45;3.5;23.5;-247.5;0;13.5;5;90;20;2.625;47.25;10.5;hauteur supposée
+285;Bâtiment ouest - mur est;batiment;10;41:12;texte;boite;-175;-170;-45;45;3.5;23.5;-172.5;0;13.5;5;90;20;2.625;47.25;10.5;hauteur supposée
+286;Chambres des prêtres nord - aile parvis extérieur, étage 1;pretres;11;42:1-12;deduit;boite;-150;-100;80;100;3.5;8.5;-125;90;6;50;20;5;26.25;10.5;2.625;aile de 50 (42:8), recul des galeries supposé
+287;Chambres des prêtres nord - aile côté temple, étage 1;pretres;11;42:1-12;deduit;boite;-150;-50;50;70;3.5;8.5;-100;60;6;100;20;5;52.5;10.5;2.625;aile de 100 (42:8), recul des galeries supposé
+288;Chambres des prêtres nord - aile parvis extérieur, étage 2;pretres;11;42:1-12;deduit;boite;-150;-100;83;100;8.5;13.5;-125;91.5;11;50;17;5;26.25;8.925;2.625;aile de 50 (42:8), recul des galeries supposé
+289;Chambres des prêtres nord - aile côté temple, étage 2;pretres;11;42:1-12;deduit;boite;-150;-50;50;67;8.5;13.5;-100;58.5;11;100;17;5;52.5;8.925;2.625;aile de 100 (42:8), recul des galeries supposé
+290;Chambres des prêtres nord - aile parvis extérieur, étage 3;pretres;11;42:1-12;deduit;boite;-150;-100;86;100;13.5;18.5;-125;93;16;50;14;5;26.25;7.35;2.625;aile de 50 (42:8), recul des galeries supposé
+291;Chambres des prêtres nord - aile côté temple, étage 3;pretres;11;42:1-12;deduit;boite;-150;-50;50;64;13.5;18.5;-100;57;16;100;14;5;52.5;7.35;2.625;aile de 100 (42:8), recul des galeries supposé
+292;Chambres des prêtres nord - mur de 50;pretres;11;42:7;texte;boite;-100;-50;98.8;100;3.5;8.5;-75;99.4;6;50;1.2;5;26.25;0.63;2.625;épaisseur et hauteur supposées
+293;Chambres des prêtres nord - lieu de cuisson;pretres;11;46:19-20;hypothese;boite;-163;-153;50;70;3.5;8.5;-158;60;6;10;20;5;5.25;10.5;2.625;
+294;Chambres des prêtres sud - aile parvis extérieur, étage 1;pretres;11;42:1-12;deduit;boite;-150;-100;-100;-80;3.5;8.5;-125;-90;6;50;20;5;26.25;10.5;2.625;aile de 50 (42:8), recul des galeries supposé
+295;Chambres des prêtres sud - aile côté temple, étage 1;pretres;11;42:1-12;deduit;boite;-150;-50;-70;-50;3.5;8.5;-100;-60;6;100;20;5;52.5;10.5;2.625;aile de 100 (42:8), recul des galeries supposé
+296;Chambres des prêtres sud - aile parvis extérieur, étage 2;pretres;11;42:1-12;deduit;boite;-150;-100;-100;-83;8.5;13.5;-125;-91.5;11;50;17;5;26.25;8.925;2.625;aile de 50 (42:8), recul des galeries supposé
+297;Chambres des prêtres sud - aile côté temple, étage 2;pretres;11;42:1-12;deduit;boite;-150;-50;-67;-50;8.5;13.5;-100;-58.5;11;100;17;5;52.5;8.925;2.625;aile de 100 (42:8), recul des galeries supposé
+298;Chambres des prêtres sud - aile parvis extérieur, étage 3;pretres;11;42:1-12;deduit;boite;-150;-100;-100;-86;13.5;18.5;-125;-93;16;50;14;5;26.25;7.35;2.625;aile de 50 (42:8), recul des galeries supposé
+299;Chambres des prêtres sud - aile côté temple, étage 3;pretres;11;42:1-12;deduit;boite;-150;-50;-64;-50;13.5;18.5;-100;-57;16;100;14;5;52.5;7.35;2.625;aile de 100 (42:8), recul des galeries supposé
+300;Chambres des prêtres sud - mur de 50;pretres;11;42:7;texte;boite;-100;-50;-100;-98.8;3.5;8.5;-75;-99.4;6;50;1.2;5;26.25;0.63;2.625;épaisseur et hauteur supposées
+301;Chambres des prêtres sud - lieu de cuisson;pretres;11;46:19-20;hypothese;boite;-163;-153;-70;-50;3.5;8.5;-158;-60;6;10;20;5;5.25;10.5;2.625;

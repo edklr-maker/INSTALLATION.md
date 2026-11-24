@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1131" width="420mm" height="297mm"><style>
+:root{--paper:#ffffff;--sheet:#ffffff;--ink:#1b2833;--line:#34506a;--muted:#5b6c79;--fill:#c3d2dc;--soft:#e4ecf1;--soft2:#d3e0e9;
+--cote:#b0392b;--hyp:#8c6a12;--water:#9cc3dc;--rule:#cdd8df;
+--f-disp:"Barlow Condensed","Bahnschrift SemiCondensed","Bahnschrift","Arial Narrow",sans-serif;
+--f-body:"Source Serif 4",Georgia,serif;--f-mono:"IBM Plex Mono",Consolas,ui-monospace,monospace}
+.dr *{vector-effect:non-scaling-stroke}
+.wall{fill:var(--fill);stroke:var(--line);stroke-width:1.4}
+.wallh{fill:none;stroke:var(--hyp);stroke-width:1.2;stroke-dasharray:6 4}
+.soft{fill:var(--soft);stroke:var(--line);stroke-width:.8}
+.soft2{fill:var(--soft2);stroke:var(--line);stroke-width:.8}
+.bg{fill:var(--sheet);stroke:var(--line);stroke-width:1}
+.ln{fill:none;stroke:var(--line);stroke-width:1.4}
+.thin{fill:none;stroke:var(--line);stroke-width:.8}
+.dash{fill:none;stroke:var(--line);stroke-width:1;stroke-dasharray:7 5}
+.hyp{fill:none;stroke:var(--hyp);stroke-width:1.4;stroke-dasharray:6 4}
+.bar{fill:var(--cote);stroke:none;opacity:.55}
+.water{fill:var(--water);stroke:var(--line);stroke-width:1}
+.dim{stroke:var(--cote);stroke-width:1;fill:none}
+.ext{stroke:var(--cote);stroke-width:.6;fill:none;opacity:.7}
+.tx{fill:var(--ink);font-family:var(--f-mono)}
+.lbl{fill:var(--ink);font-family:var(--f-disp);font-weight:600;letter-spacing:.02em}
+.mut{fill:var(--muted);font-family:var(--f-mono)}
+.tc{fill:var(--cote);font-family:var(--f-mono);font-weight:500}
+.th{fill:var(--hyp);font-family:var(--f-mono)}
+.solid{fill:var(--line);stroke:none}
+.frame{fill:none;stroke:var(--ink);stroke-width:2.2}
+.frame2{fill:none;stroke:var(--ink);stroke-width:.8}
+.cell{fill:none;stroke:var(--ink);stroke-width:.8}
+.k-num{font-family:var(--f-mono);font-size:15px;fill:var(--cote);letter-spacing:2px}
+.k-title{font-family:var(--f-disp);font-weight:600;font-size:46px;fill:var(--ink)}
+.k-ref{font-family:var(--f-mono);font-size:15px;fill:var(--muted)}
+.k-lab{font-family:var(--f-mono);font-size:12px;fill:var(--muted);letter-spacing:1.5px}
+.k-txt{font-family:var(--f-mono);font-size:15px;fill:var(--ink)}
+.k-small{font-family:var(--f-mono);font-size:13px;fill:var(--ink)}
+.sb-a{fill:var(--ink)} .sb-b{fill:#fff;stroke:var(--ink);stroke-width:1}
+</style><rect x="0" y="0" width="1600" height="1131" fill="#ffffff"/><rect x="20" y="20" width="1560" height="1091" class="frame"/><svg viewBox="-12 -8 58 38" role="img" aria-label="Annexe — la brique de siège" x="50" y="45" width="1500" height="830" preserveAspectRatio="xMidYMid meet" class="dr"><rect x="0" y="0" width="34" height="22" class="soft2"/><rect x="0" y="0" width="34" height="22" class="ln"/><rect x="10" y="6" width="14" height="10" class="wall"/><text x="17" y="11" class="tx" font-size="1.1199999999999999" text-anchor="middle" dominant-baseline="middle">Jérusalem</text><rect x="7" y="3" width="20" height="16" class="hyp"/><text x="17" y="20.5" class="th" font-size="0.96" text-anchor="middle" dominant-baseline="middle">mur de siège · terrasse</text><circle cx="4" cy="11" r="1" class="ln"/><circle cx="30" cy="11" r="1" class="ln"/><circle cx="17" cy="1.6" r="1" class="ln"/><text x="3" y="1.5" class="mut" font-size="0.96" text-anchor="start" dominant-baseline="middle">béliers</text><line x1="-6" y1="-3" x2="-6" y2="25" class="ln"/><rect x="-7" y="-3" width="2" height="28" class="wall"/><text x="-9.5" y="11" class="tx" font-size="1.04" text-anchor="middle" dominant-baseline="middle" transform="rotate(-90 -9.5 11)">plaque de fer</text><text x="17" y="-4" class="mut" font-size="1.04" text-anchor="middle" dominant-baseline="middle">brique d'argile, ≈ 30 × 20 cm (dimension supposée)</text></svg><line x1="20" y1="900" x2="1580" y2="900" class="frame"/><line x1="800" y1="900" x2="800" y2="1111" class="cell"/><line x1="1190" y1="900" x2="1190" y2="1111" class="cell"/><text x="44" y="934" class="k-num">PLANCHE A · TEMPLE D'ÉZÉCHIEL</text><text x="44" y="992" class="k-title">Annexe — la brique de siège</text><text x="44" y="1030" class="k-ref">Ézéchiel 4:1-3</text><text x="44" y="1075" class="k-lab">CROQUIS POUR MODÉLISATION BLENDER · v1 · 24/11/2026</text><text x="822" y="930" class="k-lab">ÉCHELLE</text><text x="822" y="976" class="k-txt">Schéma sans échelle</text><text x="822" y="1066" class="k-small">1 coudée longue = 52,5 cm</text><text x="822" y="1086" class="k-small">1 roseau = 6 coudées = 3,15 m</text><text x="1212" y="930" class="k-lab">LÉGENDE</text><rect x="1212" y="952" width="36" height="16" class="wall"/><text x="1260" y="965" class="k-small">maçonnerie cotée par le texte</text><rect x="1212" y="982" width="36" height="16" class="wallh"/><text x="1260" y="995" class="k-small">hypothèse ou déduction</text><rect x="1212" y="1012" width="36" height="16" class="soft"/><text x="1260" y="1025" class="k-small">sol, cour, terrain</text><line x1="1212" y1="1050" x2="1248" y2="1050" class="dim" stroke-width="2"/><text x="1260" y="1055" class="k-small">cote en coudées longues</text><text x="1212" y="1085" class="k-small" fill="#5b6c79">Plans : nord en haut, est à droite (sauf mention)</text></svg>
