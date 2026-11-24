@@ -1,1 +1,175 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Temple d'Ézéchiel</title>
+<meta name="description" content="Croquis cotés en coudées et modèle Blender du temple décrit en Ézéchiel 40 à 48.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Page de présentation : en-tête avec la vue 3D, chiffres clés, galerie des planches, téléchargements */
+:root{
+  --paper:#e9eef1; --sheet:#f7f9fa; --ink:#1b2833; --line:#34506a; --muted:#5b6c79;
+  --fill:#c3d2dc; --cote:#b0392b; --hyp:#8c6a12; --rule:#cdd8df;
+  --f-disp:"Barlow Condensed","Bahnschrift","Arial Narrow",sans-serif;
+  --f-body:"Source Serif 4",Georgia,serif;
+  --f-mono:"IBM Plex Mono",Consolas,ui-monospace,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root{
+  --paper:#0e161d; --sheet:#141f28; --ink:#e2eaef; --line:#9db6c8; --muted:#8a9eac;
+  --fill:#2c4253; --cote:#ff7f6b; --hyp:#e2b84e; --rule:#253541; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6}
+a{color:var(--line)}
+a:focus-visible{outline:2px solid var(--cote);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-disp);font-weight:600;margin:0;text-wrap:balance;letter-spacing:.01em}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cote)}
+header{padding-block:56px 32px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:40px;align-items:center}
+@media (max-width:860px){header{grid-template-columns:1fr;padding-block:36px 24px}}
+h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:.95;margin:10px 0 18px}
+.lead{color:var(--muted);max-width:56ch;margin:0}
+.hero-img{margin:0;border:1px solid var(--rule);background:var(--sheet)}
+.hero-img img{display:block;width:100%;height:auto}
+.hero-img figcaption{font-family:var(--f-mono);font-size:.74rem;color:var(--muted);padding:8px 12px}
+.facts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin-bottom:56px}
+@media (max-width:860px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.fact:last-child{grid-column:1/-1}}
+.fact{background:var(--sheet);padding:16px 18px}
+.fact b{display:block;font-family:var(--f-mono);font-weight:500;font-size:1.3rem;color:var(--cote);font-variant-numeric:tabular-nums}
+.fact span{font-size:.9rem;color:var(--muted)}
+section{margin-bottom:60px}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--ink);padding-bottom:8px;margin-bottom:22px}
+.sec-head h2{font-size:2rem}
+.sec-head p{margin:0;color:var(--muted);font-size:.92rem;max-width:60ch}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:18px}
+.card{background:var(--sheet);border:1px solid var(--rule);display:flex;flex-direction:column;min-width:0}
+.card a.thumb{display:block;background:#fff;aspect-ratio:1.414;overflow:hidden}
+.card img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 40%;transition:transform .3s}
+.card a.thumb:hover img{transform:scale(1.04)}
+.card .meta{padding:10px 14px 12px;display:grid;gap:2px}
+.card .num{font-family:var(--f-mono);font-size:.72rem;color:var(--cote);letter-spacing:.1em}
+.card h3{font-size:1.2rem;line-height:1.15}
+.card .refs{font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
+.card .fmt{display:flex;gap:12px;font-family:var(--f-mono);font-size:.76rem;margin-top:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.two>div{min-width:0}
+.dl{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.dl a{display:flex;justify-content:space-between;gap:12px;background:var(--sheet);border:1px solid var(--rule);padding:12px 16px;text-decoration:none;color:var(--ink)}
+.dl a:hover{border-color:var(--line)}
+.dl small{font-family:var(--f-mono);color:var(--muted);font-size:.76rem;white-space:nowrap}
+.dl strong{font-family:var(--f-disp);font-weight:600;font-size:1.1rem;letter-spacing:.02em}
+.dl em{display:block;font-style:normal;font-size:.86rem;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-family:var(--f-mono);font-weight:500;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;font-family:var(--f-mono);font-size:.78rem;color:var(--muted)}
+.sw{display:inline-block;width:16px;height:16px;vertical-align:-3px;margin-right:6px;border:1px solid var(--line)}
+footer{border-top:1px solid var(--rule);padding-block:24px 48px;font-size:.84rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.card img{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">Ézéchiel 40 – 48 · reconstitution</div>
+      <h1>Le temple d'Ézéchiel</h1>
+      <p class="lead">Le prophète voit un homme mesurer un temple au roseau, porte par porte et mur par mur. Ce projet reprend chaque cote du texte, en coudées, pour en tirer 18 planches de croquis et un premier modèle 3D dans Blender. Ce qui vient du texte, ce qui en est déduit et ce qui est supposé est distingué partout.</p>
+    </div>
+    <figure class="hero-img">
+      <a href="ezechiel/blender/apercu_blocking.png"><img src="ezechiel/blender/apercu_blocking.png" alt="Vue 3D du modèle Blender : enceinte carrée, six portes, parvis, autel et temple" width="1600" height="1000"></a>
+      <figcaption>Volumes de base dans Blender · gris : texte · bleu : déduit · ocre : hypothèse</figcaption>
+    </figure>
+  </header>
 
+  <div class="facts">
+    <div class="fact"><b>52,5 cm</b><span>la coudée longue (coudée + 1 palme)</span></div>
+    <div class="fact"><b>3,15 m</b><span>le roseau de mesure, 6 coudées</span></div>
+    <div class="fact"><b>500 × 500</b><span>coudées d'enceinte, environ 262 m de côté</span></div>
+    <div class="fact"><b>100 × 50</b><span>coudées pour le temple, plate-forme de 6</span></div>
+    <div class="fact"><b>301</b><span>volumes cotés dans le modèle 3D</span></div>
+  </div>
+
+  <section id="planches">
+    <div class="sec-head">
+      <h2>Les planches</h2>
+      <p>Format A3 paysage, cotes en coudées longues, échelle et légende dans le cartouche. Cliquer sur une planche pour l'ouvrir en grand.</p>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section id="telecharger" class="two">
+    <div>
+      <div class="sec-head"><h2>Fichiers</h2></div>
+      <ul class="dl">
+        <li><a href="ezechiel/storyboard-ezechiel.html"><span><strong>Storyboard</strong><em>Les 18 planches avec les versets, les cotes et les points tranchés</em></span><small>HTML</small></a></li>
+        <li><a href="ezechiel/cotes.csv"><span><strong>Tableau des cotes</strong><em>301 volumes : position, dimensions en coudées et en mètres, verset, certitude</em></span><small>CSV</small></a></li>
+        <li><a href="ezechiel/blender/temple_ezechiel_blocking.blend"><span><strong>Modèle Blender</strong><em>Volumes de base déjà construits, scène en mètres</em></span><small>.blend · 4.1</small></a></li>
+        <li><a href="ezechiel/blender/construire_temple.py"><span><strong>Script de construction</strong><em>Reconstruit le modèle à partir du tableau des cotes</em></span><small>Python</small></a></li>
+        <li><a href="ezechiel/README.md"><span><strong>Mode d'emploi</strong><em>Repère, niveaux, commandes pour tout régénérer</em></span><small>MD</small></a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="sec-head"><h2>Choix de lecture</h2></div>
+      <table>
+        <thead><tr><th>Question</th><th>Retenu</th></tr></thead>
+        <tbody>
+          <tr><td>Enceinte (42:16-20)</td><td>500 coudées (Septante) ; l'hébreu dit « roseaux »</td></tr>
+          <tr><td>Vestibule du temple (40:49)</td><td class="n">12 coudées (Septante)</td></tr>
+          <tr><td>Largeur des portes (40:13)</td><td class="n">6 + 13 + 6 = 25</td></tr>
+          <tr><td>Hauteurs</td><td>Supposées : étages 5, portes 20, nef 30, marches ½</td></tr>
+          <tr><td>Portion sacrée (45 ; 48)</td><td>25 000 coudées au carré : Lévites, prêtres, ville</td></tr>
+        </tbody>
+      </table>
+      <div class="legend">
+        <span><i class="sw" style="background:#c7c2b8"></i>cote du texte</span>
+        <span><i class="sw" style="background:#8cadcc"></i>déduit</span>
+        <span><i class="sw" style="background:#d9a640"></i>hypothèse</span>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    Texte : Ézéchiel 40 à 48 (Segond, ESV, NIV, LEB, Septante). Valeur de la coudée longue d'après les notes d'étude (51,8 à 53,3 cm). Croquis et modèle de travail, version du 24/11/2026.
+  </div>
+</footer>
+
+<script>
+const P=[
+ ["00","Unités et échelle","unites-et-echelle","40:3-5 · 43:13"],
+ ["01","Plan masse de l'enceinte","plan-masse-de-l-enceinte","40:5 · 42:15-20 · 45:2"],
+ ["02","Porte extérieure — plan","porte-exterieure-plan","40:6-16"],
+ ["03","Porte extérieure — coupe","porte-exterieure-coupe-longitudinale","40:6-16 · 40:22"],
+ ["04","Parvis extérieur, chambres et cuisines","parvis-exterieur-chambres-et-cuisines","40:17-19 · 46:21-24"],
+ ["05","Portes intérieures et tables","portes-interieures-et-tables-des-sacrifices","40:28-43"],
+ ["06","Parvis intérieur","parvis-interieur","40:44-47"],
+ ["07","Temple — plan","temple-plan","40:48-49 · 41:1-14"],
+ ["08","Temple — coupe transversale","temple-coupe-transversale","41:5-11"],
+ ["09","Décor et menuiserie","decor-et-menuiserie","41:15-26"],
+ ["10","Bâtiment occidental","batiment-occidental-binyan","41:12-15"],
+ ["11","Chambres saintes des prêtres","chambres-saintes-des-pretres","42:1-14 · 46:19-20"],
+ ["12","Autel des holocaustes","autel-des-holocaustes","43:13-17"],
+ ["13","Le fleuve sorti du temple","le-fleuve-sorti-du-temple","47:1-12"],
+ ["14","Portion sacrée","portion-sacree-terumah","45:1-8 · 48:8-22"],
+ ["15","La ville et ses douze portes","la-ville-et-ses-douze-portes","48:15-35"],
+ ["16","Partage du pays","partage-du-pays-entre-les-tribus","47:13-48:29"],
+ ["A","Annexe — la brique de siège","annexe-la-brique-de-siege","4:1-3"]
+];
+const g=document.getElementById("gallery");
+P.forEach(([n,t,s,r])=>{
+  const base=`ezechiel/croquis/planche-${n}-${s}`;
+  const a=document.createElement("article");a.className="card";
+  a.innerHTML=`<a class="thumb" href="${base}.png"><img src="${base}.png" alt="Planche ${n} : ${t}" loading="lazy" width="3840" height="2715"></a>
+  <div class="meta"><span class="num">PLANCHE ${n}</span><h3>${t}</h3><span class="refs">Ézéchiel ${r}</span>
+  <span class="fmt"><a href="${base}.png">PNG 4K</a><a href="${base}.svg">SVG</a></span></div>`;
+  g.appendChild(a);
+});
+</script>
+</body>
+</html>
